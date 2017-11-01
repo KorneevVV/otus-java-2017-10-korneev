@@ -6,6 +6,7 @@ import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.NoSuchElementException;
 
 public class MyArrayList<E> implements List<E> {
 
@@ -17,7 +18,7 @@ public class MyArrayList<E> implements List<E> {
 
 	private static final int DEFAULT_SIZE = 10;
 
-	MyArrayList(int size) {
+	public MyArrayList(int size) {
 		if (size < 1) {
 			throw new IllegalArgumentException("Size is wrong");
 		}
@@ -25,7 +26,7 @@ public class MyArrayList<E> implements List<E> {
 		this.array = new Object[size];
 	}
 
-	MyArrayList() {
+	public MyArrayList() {
 		this(DEFAULT_SIZE);
 	}
 
@@ -96,6 +97,7 @@ public class MyArrayList<E> implements List<E> {
 			if (array[i].equals(o)) {
 				System.arraycopy(array, i + 1, array, i, count - i - 1);
 				count--;
+
 				return true;
 			}
 		}
@@ -111,23 +113,67 @@ public class MyArrayList<E> implements List<E> {
 	}
 
 	@Override
-	public boolean addAll(Collection<? extends E> c) {
-		throw new UnsupportedOperationException();
+	public boolean addAll(Collection<? extends E> col) {
+		Object[] arrCol = col.toArray();
+		if (size < (size + arrCol.length)) {
+			size = count + arrCol.length;
+			Object[] arrayTemp = new Object[size];
+			System.arraycopy(array, 0, arrayTemp, 0, array.length);
+			array = arrayTemp;
+		}
+		System.arraycopy(arrCol, 0, array, count, arrCol.length);
+		count = count + arrCol.length;
+		return arrCol.length != 0;
 	}
 
 	@Override
-	public boolean addAll(int index, Collection<? extends E> c) {
-		throw new UnsupportedOperationException();
+	public boolean addAll(int index, Collection<? extends E> col) {
+		Object[] arrCol = col.toArray();
+		if (arrCol.length == 0) {
+			return false;
+		}
+		if (size < (count + arrCol.length)) {
+			size = count + arrCol.length;
+			Object[] arrayTemp = new Object[size];
+			System.arraycopy(array, 0, arrayTemp, 0, array.length);
+			array = arrayTemp;
+		}
+		System.arraycopy(array, index, array, index + arrCol.length, count - index);
+		System.arraycopy(arrCol, 0, array, index, arrCol.length);
+		count = count + arrCol.length;
+		return true;
 	}
 
 	@Override
-	public boolean removeAll(Collection<?> c) {
-		throw new UnsupportedOperationException();
+	public boolean removeAll(Collection<?> col) {
+		Object[] arr = col.toArray();
+		boolean deleting = false;
+		for (int i = 0; i < arr.length; i++) {
+			boolean temp = remove(arr[i]);
+			if (temp && !deleting) {
+				deleting = true;
+			}
+		}
+		return deleting;
 	}
 
 	@Override
-	public boolean retainAll(Collection<?> c) {
-		throw new UnsupportedOperationException();
+	public boolean retainAll(Collection<?> col) {
+		Object[] arrList = toArray();
+		boolean changed = false;
+		for (int i = 0; i < count; i++) {
+			if (!col.contains(arrList[i])) {
+				if (!changed) {
+					changed = true;
+				}
+				boolean del = true;
+				while (del) {
+					del = remove(arrList[i]);
+					i = i == 0 ? 0 : i--;
+				}
+			}
+		}
+		return changed;
 	}
 
 	@Override
@@ -198,22 +244,40 @@ public class MyArrayList<E> implements List<E> {
 
 	@Override
 	public ListIterator<E> listIterator() {
-		throw new UnsupportedOperationException();
+		return new ListIteratorImpl();
 	}
 
 	@Override
 	public ListIterator<E> listIterator(int index) {
-		throw new UnsupportedOperationException();
+		return new ListIteratorImpl(index);
 	}
 
 	@Override
 	public List<E> subList(int fromIndex, int toIndex) {
-		throw new UnsupportedOperationException();
+		throw new UnsupportedOperationException(); // todo
 	}
 
 	@SuppressWarnings("unchecked")
 	private E array(int index) {
 		return (E) array[index];
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (o == this)
+			return true;
+		if (!(o instanceof List))
+			return false;
+
+		ListIterator<E> e1 = listIterator();
+		ListIterator<?> e2 = ((List<?>) o).listIterator();
+		while (e1.hasNext() && e2.hasNext()) {
+			E o1 = e1.next();
+			Object o2 = e2.next();
+			if (!(o1 == null ? o2 == null : o1.equals(o2)))
+				return false;
+		}
+		return !(e1.hasNext() || e2.hasNext());
 	}
 
 	@Override
@@ -225,7 +289,8 @@ public class MyArrayList<E> implements List<E> {
 		return sb.toString();
 	}
 
-	public class ListIteratorImpl implements ListIterator<E> {
+
+	private class IteratorImpl implements Iterator<E> {
 
 		private int countIterator = 0;
 
@@ -233,36 +298,20 @@ public class MyArrayList<E> implements List<E> {
 
 		@Override
 		public boolean hasNext() {
-			return count > countIterator;
+			return countIterator != size;
 		}
 
 		@Override
 		public E next() {
 			checkModification();
+			int i = countIterator;
+			if (i >= size)
+				throw new NoSuchElementException();
+			Object[] array = MyArrayList.this.array;
+			if (i >= array.length)
+				throw new ConcurrentModificationException();
 			countIterator++;
 			return array(countIterator - 1);
-		}
-
-		@Override
-		public boolean hasPrevious() {
-			return countIterator > 0;
-		}
-
-		@Override
-		public E previous() {
-			checkModification();
-			countIterator--;
-			return array(countIterator);
-		}
-
-		@Override
-		public int nextIndex() {
-			return countIterator;
-		}
-
-		@Override
-		public int previousIndex() {
-			return count <= countIterator ? -1 : countIterator - 1;
 		}
 
 		@Override
@@ -272,23 +321,57 @@ public class MyArrayList<E> implements List<E> {
 			MyArrayList.this.remove(countIterator);
 		}
 
-		@Override
-		public void set(E e) {
-			checkModification();
-			MyArrayList.this.set(countIterator - 1, e);
-			countIterator++;
-		}
-
-		@Override
-		public void add(E e) {
-			checkModification();
-			MyArrayList.this.add(countIterator++, e);
-		}
-
 		private void checkModification() {
 			if (count != checkCount) {
 				throw new ConcurrentModificationException("MyArrayList has been modified");
 			}
+		}
+	}
+
+	public class ListIteratorImpl extends IteratorImpl implements ListIterator<E> {
+
+		public ListIteratorImpl() {
+		}
+
+		public ListIteratorImpl(int index) {
+			super();
+			super.countIterator = index;
+		}
+
+
+		@Override
+		public boolean hasPrevious() {
+			return super.countIterator > 0;
+		}
+
+		@Override
+		public E previous() {
+			super.checkModification();
+			super.countIterator--;
+			return array(super.countIterator);
+		}
+
+		@Override
+		public int nextIndex() {
+			return super.countIterator;
+		}
+
+		@Override
+		public int previousIndex() {
+			return count <= super.countIterator ? -1 : super.countIterator - 1;
+		}
+
+		@Override
+		public void set(E e) {
+			super.checkModification();
+			MyArrayList.this.set(super.countIterator - 1, e);
+			super.countIterator++;
+		}
+
+		@Override
+		public void add(E e) {
+			super.checkModification();
+			MyArrayList.this.add(super.countIterator++, e);
 		}
 	}
 }

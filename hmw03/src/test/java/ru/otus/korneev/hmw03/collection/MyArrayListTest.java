@@ -3,8 +3,12 @@ package ru.otus.korneev.hmw03.collection;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.ConcurrentModificationException;
 import java.util.List;
+import java.util.ListIterator;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 public class MyArrayListTest {
@@ -21,6 +25,56 @@ public class MyArrayListTest {
 		myList.add("2");
 		myList.add("3");
 		myList.add("4");
+	}
+
+	@Test
+	public void addAllForIndex() throws Exception {
+		ArrayList<String> arList = new ArrayList<>();
+		arList.add("91");
+		arList.add("82");
+		arList.add("93");
+		arList.add("84");
+		arList.add("95");
+		arList.add("86");
+		arList.add("97");
+		arList.add("88");
+		arList.add("99");
+		arList.add("810");
+		assertEquals(true, myList.addAll(2, arList));
+		ArrayList<String> exList = new ArrayList<>();
+		exList.add("0");
+		exList.add("1");
+		exList.add("91");
+		exList.add("82");
+		exList.add("93");
+		exList.add("84");
+		exList.add("95");
+		exList.add("86");
+		exList.add("97");
+		exList.add("88");
+		exList.add("99");
+		exList.add("810");
+		exList.add("2");
+		exList.add("3");
+		exList.add("4");
+		assertEquals(exList, myList);
+	}
+
+	@Test
+	public void addAllForIndex2() throws Exception {
+		ArrayList<String> arList = new ArrayList<>();
+		arList.add("91");
+		arList.add("82");
+		assertEquals(true, myList.addAll(2, arList));
+		ArrayList<String> exList = new ArrayList<>();
+		exList.add("0");
+		exList.add("1");
+		exList.add("91");
+		exList.add("82");
+		exList.add("2");
+		exList.add("3");
+		exList.add("4");
+		assertEquals(exList, myList);
 	}
 
 	@Test
@@ -42,28 +96,15 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void iterator() throws Exception {
-		throw new UnsupportedOperationException();
-	}
-
-	@Test
 	public void toArray() throws Exception {
-		String[] expectedArray = new String[]{"0", "1", "2", "3", "4"};
-		Object[] myArray = myList.toArray();
-		for (int i = 0; i < myArray.length; i++) {
-			assertEquals(expectedArray[i], myArray[i]);
-		}
+		assertArrayEquals(new String[]{"0", "1", "2", "3", "4"}, myList.toArray());
 	}
 
 	@Test
-	public void toArray1() throws Exception {
+	public void toArrayGeneric() throws Exception {
 		String[] testArray = new String[7];
-		Object[] myArray = myList.toArray(testArray);
 		String[] expectedArray = new String[]{"0", "1", "2", "3", "4", null, null, null, null, null};
-		for (int i = 0; i < myArray.length; i++) {
-			assertEquals(expectedArray[i],
-					myArray[i]);
-		}
+		assertArrayEquals(expectedArray, myList.toArray(testArray));
 	}
 
 	@Test
@@ -94,6 +135,7 @@ public class MyArrayListTest {
 		assertEquals("3", myList.remove(2));
 		assertEquals("4", myList.remove(2));
 	}
+
 	@Test
 	public void removeBoolean() throws Exception {
 		assertEquals(true, myList.remove("0"));
@@ -108,22 +150,63 @@ public class MyArrayListTest {
 
 	@Test
 	public void addAll() throws Exception {
-		throw new UnsupportedOperationException();
-	}
-
-	@Test
-	public void addAll1() throws Exception {
-		throw new UnsupportedOperationException();
+		ArrayList<String> arList = new ArrayList<>();
+		arList.add("0");
+		arList.add("4");
+		arList.add("0");
+		arList.add("4");
+		arList.add("0");
+		arList.add("4");
+		arList.add("0");
+		arList.add("4");
+		assertEquals(true, myList.addAll(arList));
+		ArrayList<String> exList = new ArrayList<>();
+		exList.add("0");
+		exList.add("1");
+		exList.add("2");
+		exList.add("3");
+		exList.add("4");
+		exList.add("0");
+		exList.add("4");
+		exList.add("0");
+		exList.add("4");
+		exList.add("0");
+		exList.add("4");
+		exList.add("0");
+		exList.add("4");
+		assertEquals(exList, myList);
 	}
 
 	@Test
 	public void removeAll() throws Exception {
-		throw new UnsupportedOperationException();
+		ArrayList<String> arList = new ArrayList<>();
+		arList.add("0");
+		arList.add("4");
+		assertEquals(true, myList.removeAll(arList));
+		assertEquals(false, myList.removeAll(arList));
+		ArrayList<String> exList = new ArrayList<>();
+		exList.add("1");
+		exList.add("2");
+		exList.add("3");
+		assertEquals(exList, myList);
 	}
 
 	@Test
 	public void retainAll() throws Exception {
-		throw new UnsupportedOperationException();
+		ArrayList<String> arList = new ArrayList<>();
+		arList.add("0");
+		arList.add("2");
+		arList.add("4");
+		myList.addAll(myList);
+		assertEquals(true, myList.retainAll(arList));
+		ArrayList<String> exList = new ArrayList<>();
+		exList.add("0");
+		exList.add("2");
+		exList.add("4");
+		exList.add("0");
+		exList.add("2");
+		exList.add("4");
+		assertEquals(exList, myList);
 	}
 
 	@Test
@@ -182,18 +265,70 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void listIterator() throws Exception {
-		throw new UnsupportedOperationException();
-	}
-
-	@Test
-	public void listIterator1() throws Exception {
-		throw new UnsupportedOperationException();
-	}
-
-	@Test
 	public void subList() throws Exception {
 		throw new UnsupportedOperationException();
 	}
 
+
+	// ITERATOR
+	@Test
+	public void hasNextIterator() throws Exception {
+		ListIterator itr = myList.listIterator();
+		assertEquals(true, itr.hasNext());
+	}
+
+	@Test(expected = ConcurrentModificationException.class)
+	public void previousIterator() throws Exception {
+		ListIterator itr = myList.listIterator();
+		itr.next();
+		assertEquals("0", itr.previous());
+		myList.add("failed");
+		itr.previous();
+	}
+
+	@Test(expected = ConcurrentModificationException.class)
+	public void nextIterator() throws Exception {
+		ListIterator itr = myList.listIterator();
+		assertEquals("0", itr.next());
+		myList.add("failed");
+		itr.next();
+	}
+
+	@Test
+	public void nextIteratorIndex() throws Exception {
+		ListIterator itr = myList.listIterator(2);
+		assertEquals("2", itr.next());
+	}
+
+	@Test(expected = ConcurrentModificationException.class)
+	public void removeIterator() throws Exception {
+		ListIterator itr = myList.listIterator();
+		itr.next();
+		itr.remove();
+		assertEquals("1", myList.get(0));
+		itr.next();
+		myList.add("failed");
+		itr.remove();
+	}
+
+	@Test(expected = ConcurrentModificationException.class)
+	public void setIterator() throws Exception {
+		ListIterator<String> itr = myList.listIterator();
+		itr.next();
+		itr.set("TEST");
+		assertEquals("TEST", myList.get(0));
+		myList.add("failed");
+		itr.set("");
+	}
+
+	@Test(expected = ConcurrentModificationException.class)
+	public void addIterator() throws Exception {
+		ListIterator<String> itr = myList.listIterator();
+		itr.next();
+		itr.add("TEST");
+		assertEquals("TEST",myList.get(1));
+		assertEquals("1", myList.get(2));
+		myList.add("failed");
+		itr.add("");
+	}
 }
