@@ -79,7 +79,7 @@ public class MyArrayListTest {
 
 	@Test
 	public void size() throws Exception {
-		assertEquals(10, myList.size());
+		assertEquals(5, myList.size());
 	}
 
 	@Test
@@ -103,7 +103,7 @@ public class MyArrayListTest {
 	@Test
 	public void toArrayGeneric() throws Exception {
 		String[] testArray = new String[7];
-		String[] expectedArray = new String[]{"0", "1", "2", "3", "4", null, null, null, null, null};
+		String[] expectedArray = new String[]{"0", "1", "2", "3", "4", null, null};
 		assertArrayEquals(expectedArray, myList.toArray(testArray));
 	}
 
@@ -120,13 +120,14 @@ public class MyArrayListTest {
 		myList.add("8");
 		myList.add("9");
 		myList.add("10");
-		assertEquals("Test Check increasing MyArrayList ", 15, myList.size());
+		myList.add("11");
+		assertEquals(12, myList.size());
 	}
 
 	@Test
 	public void constructor() throws Exception {
-		assertEquals("TestSize default constructor", 10, myList.size());
-		assertEquals("TestSize constructor = 15", 15, new MyArrayList<>(15).size());
+		assertEquals(5, myList.size());
+		assertEquals(0, new MyArrayList<>(0).toArray().length);
 	}
 
 	@Test
@@ -264,12 +265,6 @@ public class MyArrayListTest {
 		assertEquals(5, myList.lastIndexOf("0"));
 	}
 
-	@Test
-	public void subList() throws Exception {
-		throw new UnsupportedOperationException();
-	}
-
-
 	// ITERATOR
 	@Test
 	public void hasNextIterator() throws Exception {
@@ -303,7 +298,6 @@ public class MyArrayListTest {
 	@Test(expected = ConcurrentModificationException.class)
 	public void removeIterator() throws Exception {
 		ListIterator itr = myList.listIterator();
-		itr.next();
 		itr.remove();
 		assertEquals("1", myList.get(0));
 		itr.next();

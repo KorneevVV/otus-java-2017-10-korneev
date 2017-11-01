@@ -28,7 +28,7 @@ public class MyHashMap<K, V> {
 		} else {
 			for (Node<K, V> node = array[index]; node != null; node = node.next) {
 				if (node.key.equals(key) && node.hash == hash) {
-					V oldValue = (V) array[index].value;
+					V oldValue = array[index].value;
 					array[index] = new Node<>(node.next, key, value, hash);
 					return oldValue;
 				} else if (node.next == null) {
@@ -51,7 +51,7 @@ public class MyHashMap<K, V> {
 
 	private V addNullKey(V value) {
 		if (array[0] != null) {
-			V oldValue = (V) array[0].value;
+			V oldValue = array[0].value;
 			array[0].value = value;
 			return oldValue;
 		} else {
@@ -90,7 +90,7 @@ public class MyHashMap<K, V> {
 
 	public V get(K key) {
 		if (key == null && array[0] != null) {
-			return (V) array[0].value;
+			return array[0].value;
 		}
 		int hash = calculateHash(key);
 		int index = calculateIndex(hash);
@@ -112,7 +112,7 @@ public class MyHashMap<K, V> {
 		}
 		V removableValue;
 		if (key == null && array[0] != null) {
-			removableValue = (V) array[0].value;
+			removableValue = array[0].value;
 			array[0] = null;
 			size--;
 			return removableValue;
