@@ -14,19 +14,19 @@ public class MyArrayList<E> implements List<E> {
 
 	private int size = 0;
 
-	private static final int DEFAULT_SIZE = 10;
+	private static final int DEFAULT_LENGTH = 10;
 
-	public MyArrayList(int size) {
-		if (size < 0) {
+	public MyArrayList(int length) {
+		if (length < 0) {
 			throw new IllegalArgumentException("Size is wrong");
-		} else if (size == 0){
-            this.array = new Object[DEFAULT_SIZE];
+		} else if (length == 0){
+            this.array = new Object[DEFAULT_LENGTH];
         }
-		this.array = new Object[size];
+		this.array = new Object[length];
 	}
 
 	public MyArrayList() {
-		this(DEFAULT_SIZE);
+		this(DEFAULT_LENGTH);
 	}
 
 	@Override
