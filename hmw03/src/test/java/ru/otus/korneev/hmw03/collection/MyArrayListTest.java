@@ -102,8 +102,8 @@ public class MyArrayListTest {
 
 	@Test
 	public void toArrayGeneric() throws Exception {
-		String[] testArray = new String[7];
-		String[] expectedArray = new String[]{"0", "1", "2", "3", "4", null, null};
+		String[] testArray = new String[5];
+		String[] expectedArray = new String[]{"0", "1", "2", "3", "4"};
 		assertArrayEquals(expectedArray, myList.toArray(testArray));
 	}
 
