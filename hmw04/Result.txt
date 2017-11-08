@@ -1,0 +1,13 @@
+Результаты замеров размещены по убыванию предподчитетельности типа GC (влияние загрузки ресурсов процессора не учитывалось)
+
+Copy GC run 5 times, time duration: 179 ms.
+MarkSweepCompact GC run 3 times, time duration: 345 ms.
+
+PS Scavenge GC run 4 times, time duration: 219 ms.
+PS MarkSweep GC run 5 times, time duration: 366 ms.
+
+G1 Young Generation GC run 33 times, time duration: 369 ms.
+G1 Old Generation GC run 2 times, time duration: 305 ms.
+
+ParNew GC run 6 times, time duration: 272 ms.
+ConcurrentMarkSweep GC run 48 times, time duration: 60474 ms.
