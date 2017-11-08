@@ -34,4 +34,3 @@ hs_err_pid*
 **/.idea
 **.iml
 **/target
-/hmw04/log/gc_serial.log.0.current
