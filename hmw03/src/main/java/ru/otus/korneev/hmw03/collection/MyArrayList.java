@@ -14,21 +14,19 @@ public class MyArrayList<E> implements List<E> {
 
 	private int size = 0;
 
-	private int count = 0;
+	private static final int DEFAULT_LENGTH = 10;
 
-	private static final int DEFAULT_SIZE = 10;
-
-	public MyArrayList(int size) {
-		if (size < 0) {
+	public MyArrayList(int length) {
+		if (length < 0) {
 			throw new IllegalArgumentException("Size is wrong");
-		} else if (size == 0){
-            this.array = new Object[DEFAULT_SIZE];
+		} else if (length == 0){
+            this.array = new Object[DEFAULT_LENGTH];
         }
-		this.array = new Object[size];
+		this.array = new Object[length];
 	}
 
 	public MyArrayList() {
-		this(DEFAULT_SIZE);
+		this(DEFAULT_LENGTH);
 	}
 
 	@Override
@@ -53,8 +51,8 @@ public class MyArrayList<E> implements List<E> {
 
 	@Override
 	public Object[] toArray() {
-		Object[] result = new Object[count];
-		System.arraycopy(array, 0, result, 0, count);
+		Object[] result = new Object[size];
+		System.arraycopy(array, 0, result, 0, size);
 		return result;
 	}
 
@@ -74,8 +72,7 @@ public class MyArrayList<E> implements List<E> {
 	@Override
 	public boolean add(E e) {
 		checkSize();
-		array[count] = e;
-		count++;
+		array[size] = e;
 		size++;
 		return true;
 	}
@@ -193,7 +190,7 @@ public class MyArrayList<E> implements List<E> {
 
 	private void checkIncreasingDA(int index) {
 		if (index > size || index < 0) {
-			throw new IndexOutOfBoundsException("Max index: " + count + ", Input: " + index);
+			throw new IndexOutOfBoundsException("Max index: " + size + ", Input: " + index);
 		}
 	}
 
@@ -218,8 +215,8 @@ public class MyArrayList<E> implements List<E> {
 	public E remove(int i) {
 		checkIncreasingDA(i);
 		E resultObject = array(i);
-		System.arraycopy(array, i + 1, array, i, count - i - 1);
-		count--;
+		System.arraycopy(array, i + 1, array, i, size - i - 1);
+		size--;
 		return resultObject;
 	}
 
@@ -284,7 +281,7 @@ public class MyArrayList<E> implements List<E> {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < count; i++) {
+		for (int i = 0; i < size; i++) {
 			sb.append(array[i]).append(" ");
 		}
 		return sb.toString();
