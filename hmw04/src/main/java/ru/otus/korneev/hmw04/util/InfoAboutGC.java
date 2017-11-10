@@ -16,7 +16,7 @@ public class InfoAboutGC {
         count++;
     }
 
-    public void summTime(long duration) {
+    public void sumTime(long duration) {
         time = time + duration;
     }
 

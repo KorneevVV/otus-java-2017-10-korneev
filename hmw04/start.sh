@@ -23,11 +23,9 @@ GC_LOG=" -verbose:gc -Xloggc:log/gc_cms.log -XX:+PrintGCDateStamps -XX:+PrintGCD
 
 java ${MEMORY} ${GC} ${GC_LOG} -jar target/hmw04.jar
 
-
 #G1 GC
 
 GC="-XX:+UseG1GC"
 GC_LOG=" -verbose:gc -Xloggc:log/gc_g1.log -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=100M"
 
 java ${MEMORY} ${GC} ${GC_LOG} -jar target/hmw04.jar
-
