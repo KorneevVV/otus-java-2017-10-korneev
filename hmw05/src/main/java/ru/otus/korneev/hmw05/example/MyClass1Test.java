@@ -1,6 +1,7 @@
 
 package ru.otus.korneev.hmw05.example;
 
+import ru.otus.korneev.hmw05.OUnit.Assert;
 import ru.otus.korneev.hmw05.OUnit.annotations.AfterOtus;
 import ru.otus.korneev.hmw05.OUnit.annotations.BeforeOtus;
 import ru.otus.korneev.hmw05.OUnit.annotations.TestOtus;
@@ -38,7 +39,7 @@ public class MyClass1Test {
         System.out.println(SIMPLE_NAME_CLASS + " Run after 1");
     }
 
-   @AfterOtus
+    @AfterOtus
     public void runAfter2() {
         System.out.println(SIMPLE_NAME_CLASS + " Run after 2");
     }

@@ -1,5 +1,6 @@
 package ru.otus.korneev.hmw05.example;
 
+import ru.otus.korneev.hmw05.OUnit.Assert;
 import ru.otus.korneev.hmw05.OUnit.annotations.AfterOtus;
 import ru.otus.korneev.hmw05.OUnit.annotations.BeforeOtus;
 import ru.otus.korneev.hmw05.OUnit.annotations.TestOtus;
@@ -20,7 +21,7 @@ public class MyClass2Test {
 
     @TestOtus
     public void runTest1() {
-        System.out.println(SIMPLE_NAME_CLASS + " Run test 1");
+        Assert.assertEquals("Failed runTest1 from MyClass1Test", "TEST", "test"); //FAILED
     }
 
     @TestOtus

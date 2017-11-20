@@ -3,6 +3,7 @@ package ru.otus.korneev.hmw05.OUnit;
 import ru.otus.korneev.hmw05.OUnit.annotations.AfterOtus;
 import ru.otus.korneev.hmw05.OUnit.annotations.BeforeOtus;
 import ru.otus.korneev.hmw05.OUnit.annotations.TestOtus;
+import ru.otus.korneev.hmw05.example.MyClass1Test;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -62,18 +63,9 @@ public class Runner {
     }
 
     public static void runTestPackage(String packageName) {
-        Package packageTest = Package.getPackage(packageName);
-        if (packageTest.getAnnotation(TestOtus.class) != null) {
-            List<Class<?>> clazzes = ClassFinder.find(packageName);
-            for (Class<?> clazz: clazzes){
-                runTestClass(clazz.getName());
-            }
-        } else {
-            try {
-                throw new Exception("Annotation @TestOtus not found");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        List<Class<?>> clazzes = ClassFinder.find(packageName);
+        for (Class<?> clazz : clazzes) {
+            runTestClass(clazz.getName());
         }
     }
 }
