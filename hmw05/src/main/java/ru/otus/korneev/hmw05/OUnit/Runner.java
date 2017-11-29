@@ -3,7 +3,6 @@ package ru.otus.korneev.hmw05.OUnit;
 import ru.otus.korneev.hmw05.OUnit.annotations.AfterOtus;
 import ru.otus.korneev.hmw05.OUnit.annotations.BeforeOtus;
 import ru.otus.korneev.hmw05.OUnit.annotations.TestOtus;
-import ru.otus.korneev.hmw05.example.MyClass1Test;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
