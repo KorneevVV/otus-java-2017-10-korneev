@@ -34,7 +34,7 @@ public class Storage {
     }
 
     public Collection<? extends Banknote> cashOut(final int amount) throws ExceptionCashOut {
-        checkBalanceAndCountBanknote(amount);
+        checkBalance(amount);
         int tempAmount = amount;
         List<Banknote> res = new ArrayList<>();
         for (int i = cells.size() - 1; i >= 0; i--) {
@@ -50,7 +50,7 @@ public class Storage {
         return res;
     }
 
-    private void checkBalanceAndCountBanknote(final int amount) throws ExceptionCashOut {
+    private void checkBalance(final int amount) throws ExceptionCashOut {
         List<String> message = new ArrayList<>();
         if (amount > this.getBalance()) {
             message.add("Insufficient balance");
@@ -58,7 +58,17 @@ public class Storage {
         if (amount % BanknoteType.values()[0].getValue() != 0) {
             message.add("Amount must be a multiple " + BanknoteType.values()[0].getValue());
         }
+        checkCountBanknote(message, amount);
+        if (!message.isEmpty()) {
+            StringBuilder sb = new StringBuilder();
+            for (String msg : message) {
+                sb.append(msg).append(". ");
+            }
+            throw new ExceptionCashOut(sb.toString());
+        }
+    }
 
+    private void checkCountBanknote(final List<String> message, final int amount) {
         int tempAmount = amount;
         for (int i = cells.size() - 1; i >= 0; i--) {
             CellsType cell = cells.get(i);
@@ -72,13 +82,9 @@ public class Storage {
         if (tempAmount != 0) {
             message.add("There is not enough banknotes of the necessary denomination");
         }
+    }
 
-        if (!message.isEmpty()) {
-            StringBuilder sb = new StringBuilder();
-            for (String msg : message) {
-                sb.append(msg).append(". ");
-            }
-            throw new ExceptionCashOut(sb.toString());
-        }
+    public void getState(){
+        cells.forEach(cell -> cell.getState());
     }
 }

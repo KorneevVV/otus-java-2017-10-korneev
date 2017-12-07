@@ -10,9 +10,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws ExceptionInvalidBanknote {
-
         ATM atm = new ATM();
+        fillingAtm(atm);
+    }
 
+    public static void fillingAtm(final ATM atm) throws ExceptionInvalidBanknote {
         boolean isRunApplication = true;
         while (isRunApplication) {
             System.out.println("Enter the number of activity\n" +
@@ -46,6 +48,7 @@ public class Main {
             }
         }
     }
+
 
     private static void depositMoney(final ATM atm, final Scanner in) throws ExceptionInvalidBanknote {
         System.out.println("Insert one banknote (enter denomination 100, 500, 1000, 5000) or 0 for end");

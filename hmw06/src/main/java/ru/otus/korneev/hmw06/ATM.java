@@ -30,4 +30,8 @@ public class ATM {
     public int balance() {
         return storage.getBalance();
     }
+
+    public void getState(){
+        storage.getState();
+    }
 }
