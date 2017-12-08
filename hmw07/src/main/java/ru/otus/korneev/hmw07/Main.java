@@ -1,4 +1,4 @@
-package ru.otus.korneev;
+package ru.otus.korneev.hmw07;
 
 import ru.otus.korneev.hmw06.ATM;
 import ru.otus.korneev.hmw06.banknote.Banknote;
@@ -6,6 +6,8 @@ import ru.otus.korneev.hmw06.exception.ExceptionInvalidBanknote;
 
 import java.util.Collections;
 import java.util.Scanner;
+
+import static ru.otus.korneev.hmw06.Main.fillingAtm;
 
 public class Main {
     public static void main(String[] args) throws ExceptionInvalidBanknote {
@@ -17,7 +19,7 @@ public class Main {
             System.out.println("Enter the number of activity\n" +
                     "1. Create new ATM\n" +
                     "2. Get all balance\n" +
-                    "3. Gee init state\n" +
+                    "3. Get init state\n" +
                     "4. TEST add Banknote 100\n" +
                     "0. Exit application");
             Scanner in = new Scanner(System.in);
@@ -28,7 +30,7 @@ public class Main {
                     break;
                 case 1:
                     ATM atm = new ATM();
-                    ru.otus.korneev.hmw06.Main.fillingAtm(atm);
+                    fillingAtm(atm);
                     dep.addAtm(atm);
                     break;
                 case 2:
@@ -38,7 +40,7 @@ public class Main {
                     dep.getInitState();
                     break;
                 case 4:
-                    dep.getListATM().get(0).cashIn(Collections.singletonList(new Banknote(100)));
+                    dep.getListATM().get(0).cashIn(Collections.singletonList(new Banknote(100))); // change Balance for Test Memento()
                     break;
                 default:
                     System.out.println("Invalid choice, try again");

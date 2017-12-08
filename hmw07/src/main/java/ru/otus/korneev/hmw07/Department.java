@@ -1,4 +1,4 @@
-package ru.otus.korneev;
+package ru.otus.korneev.hmw07;
 
 import ru.otus.korneev.hmw06.ATM;
 
@@ -19,12 +19,12 @@ public class Department {
 
     public int getAllBalance() {
         return listATM.stream()
-                .map(atm->{return atm.balance();})
+                .map(ATM::balance)
                 .reduce((atm1, atm2)->atm1+atm2).orElse(0);
     }
 
     public void getInitState(){
-        listATM.forEach(atm -> atm.getState());
+        listATM.forEach(ATM::getState);
     }
 
 }

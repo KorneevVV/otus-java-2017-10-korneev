@@ -6,10 +6,18 @@
 
     <parent>
         <groupId>ru.otus.korneev</groupId>
-        <artifactId>hmw06</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../hmw06/pom.xml</relativePath>
+        <artifactId>parent</artifactId>
+        <version>0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.otus.korneev</groupId>
+            <artifactId>hmw06</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <groupId>hmw07</groupId>
     <artifactId>hmw07</artifactId>
