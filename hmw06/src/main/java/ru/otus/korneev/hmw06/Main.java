@@ -21,7 +21,7 @@ public class Main {
                     "1. Deposit money to the ATM\n" +
                     "2. Get money from an ATM\n" +
                     "3. Get the ATM balance\n" +
-                    "0. Exit application");
+                    "0. Exit create ATM");
             Scanner in = new Scanner(System.in);
             int number = in.nextInt();
             switch (number) {

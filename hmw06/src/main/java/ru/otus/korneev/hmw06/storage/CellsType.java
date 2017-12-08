@@ -19,10 +19,10 @@ public enum CellsType {
     CellsType(BanknoteType banknote) {
         this.banknoteType = banknote;
         try {
-            Random r = new Random();
-            int size = r.nextInt(3);
+            Random r = new Random(System.currentTimeMillis());
+            int size = r.nextInt(4);
             for (int i = 0; i < size; i++) {
-                banknotes.add(new Banknote(banknote.getValue()));
+                this.add(new Banknote(banknote.getValue()));
             }
         } catch (ExceptionInvalidBanknote exceptionInvalidBanknote) {
             exceptionInvalidBanknote.printStackTrace();
@@ -31,8 +31,7 @@ public enum CellsType {
     }
 
     private void memento(CellsType cellsType) {
-        State initState = new State(cellsType);
-        state = initState;
+        state = new State(cellsType);
     }
 
     private BanknoteType banknoteType;
@@ -60,8 +59,6 @@ public enum CellsType {
         return false;
     }
 
-    @org.jetbrains.annotations.Nullable
-    @org.jetbrains.annotations.Contract(pure = true)
     public Banknote banknoteOut() {
         if (value != 0) {
             Banknote banknote = banknotes.get(0);
@@ -89,11 +86,11 @@ public enum CellsType {
             this.banknotes.addAll(cellsType.banknotes);
         }
 
-        public int getValue() {
+        private int getValue() {
             return value;
         }
 
-        public List<Banknote> getBanknotes() {
+        private List<Banknote> getBanknotes() {
             return banknotes;
         }
     }
