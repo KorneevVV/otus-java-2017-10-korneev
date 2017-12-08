@@ -26,5 +26,4 @@ public class Department {
     public void getInitState(){
         listATM.forEach(ATM::getState);
     }
-
 }
