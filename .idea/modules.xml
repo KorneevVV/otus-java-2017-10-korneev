@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hmw01/hmw01.iml" filepath="$PROJECT_DIR$/hmw01/hmw01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmw02/hmw02.iml" filepath="$PROJECT_DIR$/hmw02/hmw02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmw03/hmw03.iml" filepath="$PROJECT_DIR$/hmw03/hmw03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmw04/hmw04.iml" filepath="$PROJECT_DIR$/hmw04/hmw04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmw05/hmw05.iml" filepath="$PROJECT_DIR$/hmw05/hmw05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmw06/hmw06.iml" filepath="$PROJECT_DIR$/hmw06/hmw06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmw07/hmw07.iml" filepath="$PROJECT_DIR$/hmw07/hmw07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmw08/hmw08.iml" filepath="$PROJECT_DIR$/hmw08/hmw08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/otus-java-2017-10-korneev.iml" filepath="$PROJECT_DIR$/.idea/otus-java-2017-10-korneev.iml" />
+    </modules>
+  </component>
+</project>

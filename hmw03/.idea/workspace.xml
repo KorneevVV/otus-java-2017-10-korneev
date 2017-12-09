@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="15772546-07ed-487b-9bbd-2c8b152b8e5e" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/hmw03$MyArrayListTest.coverage" NAME="MyArrayListTest Coverage Results" MODIFIED="1510337948200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ru.otus.korneev.hmw03.collection.MyArrayListTest</FILTER>
+      <FILTER>ru.otus.korneev.hmw03.collection.MyArrayList</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/hmw03$Main.coverage" NAME="Main Coverage Results" MODIFIED="1509570694248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ru.otus.korneev.hmw03.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3111">
+              <caret line="849" column="24" lean-forward="false" selection-start-line="849" selection-start-column="24" selection-end-line="849" selection-end-column="24" />
+              <folding>
+                <element signature="docComment;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;field#DEFAULT_CAPACITY#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;field#EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;field#DEFAULTCAPACITY_EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;field#elementData#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;field#size#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#ArrayList#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#ArrayList#1;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#ArrayList#2;class#ArrayList#0" expanded="false" />
+                <element signature="method#ArrayList#2;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#trimToSize#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#trimToSize#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+                <element signature="e#8062#8122#0" expanded="false" />
+                <element signature="method#ensureCapacityInternal#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#ensureExplicitCapacity#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;field#MAX_ARRAY_SIZE#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#grow#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#grow#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#hugeCapacity#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#size#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#isEmpty#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#contains#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#indexOf#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#indexOf#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#clone#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#clone#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#toArray#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#toArray#1;class#ArrayList#0" expanded="false" />
+                <element signature="method#toArray#1;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#get#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#get#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#set#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#set#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#add#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#add#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#add#1;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#remove#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#remove#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#remove#1;class#ArrayList#0" expanded="false" />
+                <element signature="method#remove#1;class#ArrayList#0" expanded="false" />
+                <element signature="method#fastRemove#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#clear#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#clear#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#addAll#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#addAll#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#addAll#1;class#ArrayList#0" expanded="false" />
+                <element signature="method#addAll#1;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#removeRange#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#removeRange#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#outOfBoundsMsg#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#removeAll#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#removeAll#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#retainAll#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#retainAll#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#batchRemove#0;class#ArrayList#0" expanded="false" />
+                <element signature="e#26946#27007#0" expanded="false" />
+                <element signature="docComment;method#writeObject#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#writeObject#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#readObject#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#readObject#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#listIterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#listIterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#listIterator#1;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#iterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;class#Itr#0;class#ArrayList#0" expanded="false" />
+                <element signature="e#31041#31042#0" expanded="true" />
+                <element signature="e#31086#31087#0" expanded="true" />
+                <element signature="method#remove#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+                <element signature="e#32024#32033#0" expanded="false" />
+                <element signature="method#forEachRemaining#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#checkForComodification#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;class#ListItr#0;class#ArrayList#0" expanded="false" />
+                <element signature="class#ListItr#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#ListItr#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#previous#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#set#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#add#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#subList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#subList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#subListRangeCheck#0;class#ArrayList#0" expanded="false" />
+                <element signature="class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#SubList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#set#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#get#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#size#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#add#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#remove#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#removeRange#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#addAll#1;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#listIterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="class#39690:44151" expanded="false" />
+                <element signature="method#next#0;class#39690:44151" expanded="false" />
+                <element signature="method#previous#0;class#39690:44151" expanded="false" />
+                <element signature="method#forEachRemaining#0;class#39690:44151" expanded="false" />
+                <element signature="method#remove#0;class#39690:44151" expanded="false" />
+                <element signature="method#set#0;class#39690:44151" expanded="false" />
+                <element signature="method#add#0;class#39690:44151" expanded="false" />
+                <element signature="method#checkForComodification#0;class#39690:44151" expanded="false" />
+                <element signature="method#subList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#rangeCheck#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#rangeCheckForAdd#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#checkForComodification#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#spliterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#forEach#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#spliterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="docComment;method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#getFence#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#trySplit#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#tryAdvance#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#forEachRemaining#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+                <element signature="method#removeIf#0;class#ArrayList#0" expanded="false" />
+                <element signature="e#51820#51866#0" expanded="false" />
+                <element signature="e#53306#53315#0" expanded="false" />
+                <element signature="method#replaceAll#0;class#ArrayList#0" expanded="false" />
+                <element signature="e#53820#53829#0" expanded="false" />
+                <element signature="method#sort#0;class#ArrayList#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3995">
+              <caret line="257" column="34" lean-forward="false" selection-start-line="257" selection-start-column="34" selection-end-line="257" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyHashMap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyHashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7769">
+              <caret line="480" column="0" lean-forward="false" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collections.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Collections.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8772">
+              <caret line="555" column="0" lean-forward="false" selection-start-line="555" selection-start-column="0" selection-end-line="555" selection-end-column="0" />
+              <folding>
+                <element signature="e#5644#5645#0" expanded="true" />
+                <element signature="e#5675#5676#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyArrayListTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/otus/korneev/hmw03/collection/MyArrayListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4369">
+              <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>DEFAULT_CAPACITY</find>
+      <find>E next()</find>
+      <find>set</find>
+      <find>E next() {</find>
+      <find>next()</find>
+      <find>tod</find>
+      <find>next(</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/ru/otus/korneev/hmw03/collection/MyArrayListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyArrayList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyHashMap.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="hmw03" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="hmw03" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hmw03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmw03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmw03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmw03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmw03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmw03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+              <item name="collection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmw03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmw03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hmw03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hmw03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="collection" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MyArrayListTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.otus.korneev.hmw03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.otus.korneev.hmw03.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hmw03" />
+      <envs />
+    </configuration>
+    <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.otus.korneev.hmw03.collection.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="ru.otus.korneev.hmw03.collection.MyArrayListTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="ru.otus.korneev.hmw03.collection.MyArrayList" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hmw03" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ru.otus.korneev.hmw03.collection" />
+      <option name="MAIN_CLASS_NAME" value="ru.otus.korneev.hmw03.collection.MyArrayListTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MyArrayListTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15772546-07ed-487b-9bbd-2c8b152b8e5e" name="Default" comment="" />
+      <created>1509566223783</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509566223783</updated>
+      <workItem from="1510337537179" duration="249000" />
+      <workItem from="1510337813275" duration="733000" />
+      <workItem from="1511103073859" duration="258000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 12m 48s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 12m 52s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 13m 09s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 13m 30s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 13m 48s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 13m 52s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 17m 05s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 18m 22s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 18m 49s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyArrayListTest - 2017.11.10 at 21h 19m 09s.xml">
+      <configuration name="MyArrayListTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1240000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19029851" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyArrayList.java</url>
+          <line>309</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/otus/korneev/hmw03/collection/MyArrayListTest.java</url>
+          <line>312</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14433">
+          <caret line="849" column="24" lean-forward="false" selection-start-line="849" selection-start-column="24" selection-end-line="849" selection-end-column="24" />
+          <folding>
+            <element signature="docComment;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#DEFAULT_CAPACITY#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#DEFAULTCAPACITY_EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#elementData#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#size#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#2;class#ArrayList#0" expanded="false" />
+            <element signature="method#ArrayList#2;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#trimToSize#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#trimToSize#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#8062#8122#0" expanded="false" />
+            <element signature="method#ensureCapacityInternal#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ensureExplicitCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#MAX_ARRAY_SIZE#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#grow#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#grow#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#hugeCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#indexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#clone#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#clone#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#toArray#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#toArray#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#toArray#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#get#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#add#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#remove#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#fastRemove#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#clear#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#addAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#addAll#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#removeRange#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeRange#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#outOfBoundsMsg#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#removeAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#retainAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#retainAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#batchRemove#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#26946#27007#0" expanded="false" />
+            <element signature="docComment;method#writeObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#writeObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#readObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#readObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#listIterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#listIterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#listIterator#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#iterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#31041#31042#0" expanded="true" />
+            <element signature="e#31086#31087#0" expanded="true" />
+            <element signature="method#remove#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#32024#32033#0" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#checkForComodification#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ListItr#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#previous#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#subList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#subList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#subListRangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#SubList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#get#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#size#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeRange#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#1;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#listIterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#39690:44151" expanded="false" />
+            <element signature="method#next#0;class#39690:44151" expanded="false" />
+            <element signature="method#previous#0;class#39690:44151" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#39690:44151" expanded="false" />
+            <element signature="method#remove#0;class#39690:44151" expanded="false" />
+            <element signature="method#set#0;class#39690:44151" expanded="false" />
+            <element signature="method#add#0;class#39690:44151" expanded="false" />
+            <element signature="method#checkForComodification#0;class#39690:44151" expanded="false" />
+            <element signature="method#subList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheckForAdd#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#checkForComodification#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#spliterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#forEach#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#spliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#getFence#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#trySplit#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#tryAdvance#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeIf#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#51820#51866#0" expanded="false" />
+            <element signature="e#53306#53315#0" expanded="false" />
+            <element signature="method#replaceAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#53820#53829#0" expanded="false" />
+            <element signature="method#sort#0;class#ArrayList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3995">
+          <caret line="257" column="34" lean-forward="false" selection-start-line="257" selection-start-column="34" selection-end-line="257" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7769">
+          <caret line="480" column="0" lean-forward="false" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9435">
+          <caret line="555" column="0" lean-forward="false" selection-start-line="555" selection-start-column="0" selection-end-line="555" selection-end-column="0" />
+          <folding>
+            <element signature="e#5644#5645#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/otus/korneev/hmw03/collection/MyArrayListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14433">
+          <caret line="849" column="24" lean-forward="false" selection-start-line="849" selection-start-column="24" selection-end-line="849" selection-end-column="24" />
+          <folding>
+            <element signature="docComment;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#DEFAULT_CAPACITY#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#DEFAULTCAPACITY_EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#elementData#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#size#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#2;class#ArrayList#0" expanded="false" />
+            <element signature="method#ArrayList#2;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#trimToSize#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#trimToSize#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#8062#8122#0" expanded="false" />
+            <element signature="method#ensureCapacityInternal#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ensureExplicitCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#MAX_ARRAY_SIZE#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#grow#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#grow#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#hugeCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#indexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#clone#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#clone#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#toArray#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#toArray#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#toArray#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#get#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#add#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#remove#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#fastRemove#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#clear#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#addAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#addAll#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#removeRange#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeRange#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#outOfBoundsMsg#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#removeAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#retainAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#retainAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#batchRemove#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#26946#27007#0" expanded="false" />
+            <element signature="docComment;method#writeObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#writeObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#readObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#readObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#listIterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#listIterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#listIterator#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#iterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#31041#31042#0" expanded="true" />
+            <element signature="e#31086#31087#0" expanded="true" />
+            <element signature="method#remove#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#32024#32033#0" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#checkForComodification#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ListItr#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#previous#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#subList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#subList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#subListRangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#SubList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#get#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#size#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeRange#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#1;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#listIterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#39690:44151" expanded="false" />
+            <element signature="method#next#0;class#39690:44151" expanded="false" />
+            <element signature="method#previous#0;class#39690:44151" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#39690:44151" expanded="false" />
+            <element signature="method#remove#0;class#39690:44151" expanded="false" />
+            <element signature="method#set#0;class#39690:44151" expanded="false" />
+            <element signature="method#add#0;class#39690:44151" expanded="false" />
+            <element signature="method#checkForComodification#0;class#39690:44151" expanded="false" />
+            <element signature="method#subList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheckForAdd#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#checkForComodification#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#spliterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#forEach#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#spliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#getFence#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#trySplit#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#tryAdvance#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeIf#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#51820#51866#0" expanded="false" />
+            <element signature="e#53306#53315#0" expanded="false" />
+            <element signature="method#replaceAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#53820#53829#0" expanded="false" />
+            <element signature="method#sort#0;class#ArrayList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="257" column="34" lean-forward="false" selection-start-line="257" selection-start-column="34" selection-end-line="257" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7769">
+          <caret line="480" column="0" lean-forward="false" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9435">
+          <caret line="555" column="0" lean-forward="false" selection-start-line="555" selection-start-column="0" selection-end-line="555" selection-end-column="0" />
+          <folding>
+            <element signature="e#5644#5645#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/otus/korneev/hmw03/collection/MyArrayListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14433">
+          <caret line="849" column="24" lean-forward="true" selection-start-line="849" selection-start-column="24" selection-end-line="849" selection-end-column="24" />
+          <folding>
+            <element signature="docComment;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#DEFAULT_CAPACITY#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#DEFAULTCAPACITY_EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#elementData#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#size#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#2;class#ArrayList#0" expanded="false" />
+            <element signature="method#ArrayList#2;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#trimToSize#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#trimToSize#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#8062#8122#0" expanded="false" />
+            <element signature="method#ensureCapacityInternal#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ensureExplicitCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#MAX_ARRAY_SIZE#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#grow#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#grow#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#hugeCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#indexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#clone#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#clone#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#toArray#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#toArray#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#toArray#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#get#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#add#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#remove#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#fastRemove#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#clear#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#addAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#addAll#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#removeRange#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeRange#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#outOfBoundsMsg#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#removeAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#retainAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#retainAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#batchRemove#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#26946#27007#0" expanded="false" />
+            <element signature="docComment;method#writeObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#writeObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#readObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#readObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#listIterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#listIterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#listIterator#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#iterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#31041#31042#0" expanded="true" />
+            <element signature="e#31086#31087#0" expanded="true" />
+            <element signature="method#remove#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#32024#32033#0" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#checkForComodification#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ListItr#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#previous#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#subList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#subList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#subListRangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#SubList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#get#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#size#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeRange#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#1;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#listIterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#39690:44151" expanded="false" />
+            <element signature="method#next#0;class#39690:44151" expanded="false" />
+            <element signature="method#previous#0;class#39690:44151" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#39690:44151" expanded="false" />
+            <element signature="method#remove#0;class#39690:44151" expanded="false" />
+            <element signature="method#set#0;class#39690:44151" expanded="false" />
+            <element signature="method#add#0;class#39690:44151" expanded="false" />
+            <element signature="method#checkForComodification#0;class#39690:44151" expanded="false" />
+            <element signature="method#subList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheckForAdd#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#checkForComodification#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#spliterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#forEach#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#spliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#getFence#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#trySplit#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#tryAdvance#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeIf#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#51820#51866#0" expanded="false" />
+            <element signature="e#53306#53315#0" expanded="false" />
+            <element signature="method#replaceAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#53820#53829#0" expanded="false" />
+            <element signature="method#sort#0;class#ArrayList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3995">
+          <caret line="257" column="34" lean-forward="true" selection-start-line="257" selection-start-column="34" selection-end-line="257" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7769">
+          <caret line="480" column="0" lean-forward="false" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9435">
+          <caret line="555" column="0" lean-forward="false" selection-start-line="555" selection-start-column="0" selection-end-line="555" selection-end-column="0" />
+          <folding>
+            <element signature="e#5644#5645#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/otus/korneev/hmw03/collection/MyArrayListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="266" column="0" lean-forward="true" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7769">
+          <caret line="480" column="0" lean-forward="false" selection-start-line="480" selection-start-column="0" selection-end-line="480" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8772">
+          <caret line="555" column="0" lean-forward="false" selection-start-line="555" selection-start-column="0" selection-end-line="555" selection-end-column="0" />
+          <folding>
+            <element signature="e#5644#5645#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/otus/korneev/hmw03/collection/MyArrayListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="266" column="0" lean-forward="false" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3995">
+          <caret line="257" column="34" lean-forward="false" selection-start-line="257" selection-start-column="34" selection-end-line="257" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3111">
+          <caret line="849" column="24" lean-forward="false" selection-start-line="849" selection-start-column="24" selection-end-line="849" selection-end-column="24" />
+          <folding>
+            <element signature="docComment;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#DEFAULT_CAPACITY#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#DEFAULTCAPACITY_EMPTY_ELEMENTDATA#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#elementData#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#size#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayList#2;class#ArrayList#0" expanded="false" />
+            <element signature="method#ArrayList#2;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#trimToSize#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#trimToSize#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ensureCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#8062#8122#0" expanded="false" />
+            <element signature="method#ensureCapacityInternal#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ensureExplicitCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;field#MAX_ARRAY_SIZE#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#grow#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#grow#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#hugeCapacity#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#size#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#isEmpty#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#contains#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#indexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#lastIndexOf#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#clone#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#clone#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#toArray#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#toArray#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#toArray#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#get#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#add#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#add#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#remove#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#remove#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#fastRemove#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#clear#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#clear#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#addAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#addAll#1;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#removeRange#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeRange#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheckForAdd#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#outOfBoundsMsg#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#removeAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#retainAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#retainAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#batchRemove#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#26946#27007#0" expanded="false" />
+            <element signature="docComment;method#writeObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#writeObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#readObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#readObject#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#listIterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#listIterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#listIterator#1;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#iterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#31041#31042#0" expanded="true" />
+            <element signature="e#31086#31087#0" expanded="true" />
+            <element signature="method#remove#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#32024#32033#0" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#checkForComodification#0;class#Itr#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ListItr#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#previous#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#ListItr#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#subList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#subList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#subListRangeCheck#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#SubList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#set#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#get#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#size#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#add#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeRange#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#addAll#1;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#listIterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#39690:44151" expanded="false" />
+            <element signature="method#next#0;class#39690:44151" expanded="false" />
+            <element signature="method#previous#0;class#39690:44151" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#39690:44151" expanded="false" />
+            <element signature="method#remove#0;class#39690:44151" expanded="false" />
+            <element signature="method#set#0;class#39690:44151" expanded="false" />
+            <element signature="method#add#0;class#39690:44151" expanded="false" />
+            <element signature="method#checkForComodification#0;class#39690:44151" expanded="false" />
+            <element signature="method#subList#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheck#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#rangeCheckForAdd#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#checkForComodification#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#spliterator#0;class#SubList#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#forEach#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#spliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="docComment;method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#ArrayListSpliterator#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#getFence#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#trySplit#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#tryAdvance#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#forEachRemaining#0;class#ArrayListSpliterator#0;class#ArrayList#0" expanded="false" />
+            <element signature="method#removeIf#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#51820#51866#0" expanded="false" />
+            <element signature="e#53306#53315#0" expanded="false" />
+            <element signature="method#replaceAll#0;class#ArrayList#0" expanded="false" />
+            <element signature="e#53820#53829#0" expanded="false" />
+            <element signature="method#sort#0;class#ArrayList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/otus/korneev/hmw03/collection/MyHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

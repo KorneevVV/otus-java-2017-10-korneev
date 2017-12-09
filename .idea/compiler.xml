@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hmw01" />
+        <module name="hmw02" />
+        <module name="hmw03" />
+        <module name="hmw04" />
+        <module name="hmw05" />
+        <module name="hmw06" />
+        <module name="hmw07" />
+        <module name="hmw08" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hmw01" target="1.8" />
+      <module name="hmw02" target="1.8" />
+      <module name="hmw03" target="1.7" />
+      <module name="hmw04" target="1.8" />
+      <module name="hmw05" target="1.8" />
+      <module name="hmw06" target="1.8" />
+      <module name="hmw07" target="1.8" />
+      <module name="hmw08" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

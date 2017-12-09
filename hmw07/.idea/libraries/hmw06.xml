@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hmw06">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../hmw06/target/hmw06.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
