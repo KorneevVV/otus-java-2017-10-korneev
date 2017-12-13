@@ -23,7 +23,7 @@ public class Department {
                 .reduce((atm1, atm2)->atm1+atm2).orElse(0);
     }
 
-    public void getInitState(){
+    public void restoreInitState(){
         listATM.forEach(ATM::getState);
     }
 }

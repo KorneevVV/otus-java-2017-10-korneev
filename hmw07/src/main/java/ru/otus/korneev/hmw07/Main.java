@@ -37,7 +37,7 @@ public class Main {
                     System.out.println("Balance: " + dep.getAllBalance());
                     break;
                 case 3:
-                    dep.getInitState();
+                    dep.restoreInitState();
                     break;
                 case 4:
                     dep.getListATM().get(0).cashIn(Collections.singletonList(new Banknote(100))); // change Balance for Test Memento()

@@ -69,7 +69,7 @@ public enum CellsType {
         return null;
     }
 
-    public void getState() {
+    public void restoreState() {
         this.value = state.getValue();
         this.banknotes.clear();
         this.banknotes.addAll(state.getBanknotes());

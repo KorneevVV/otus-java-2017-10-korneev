@@ -85,6 +85,6 @@ public class Storage {
     }
 
     public void getState(){
-        cells.forEach(cell -> cell.getState());
+        cells.forEach(CellsType::restoreState);
     }
 }
