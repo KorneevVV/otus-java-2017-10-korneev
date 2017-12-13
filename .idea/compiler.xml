@@ -19,7 +19,7 @@
     <bytecodeTargetLevel>
       <module name="hmw01" target="1.8" />
       <module name="hmw02" target="1.8" />
-      <module name="hmw03" target="1.7" />
+      <module name="hmw03" target="1.8" />
       <module name="hmw04" target="1.8" />
       <module name="hmw05" target="1.8" />
       <module name="hmw06" target="1.8" />
