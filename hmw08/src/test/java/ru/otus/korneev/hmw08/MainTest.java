@@ -17,26 +17,19 @@ import java.util.Map;
 public class MainTest {
 
 	private Gson gson;
-	private Gson myGson;
-	private ExampleSimpleClass exampleSimpleClass;
+	private MyGson myGson;
 	private ExampleClass exampleClass;
 
 	@Before
 	public void getGson() {
 		gson = new Gson();
-		myGson = new Gson();
-		exampleSimpleClass = new ExampleSimpleClass();
+		myGson = new MyGson();
 		exampleClass = new ExampleClass();
 	}
 
 	@Test
-	public void exampleSimpleClass() {
-		ExampleSimpleClass obg = gson.fromJson(myGson.toJson(exampleSimpleClass), ExampleSimpleClass.class);
-		assertEquals(exampleSimpleClass, obg);
-	}
-
-	@Test
 	public void exampleClass() {
+//		System.out.println(gson.toJson(exampleClass));
 		ExampleClass obg = gson.fromJson(myGson.toJson(exampleClass), ExampleClass.class);
 		assertEquals(exampleClass, obg);
 	}
