@@ -24,17 +24,18 @@ public class MyGson {
 		SET_NAME_WRAPPER.add("Byte");
 		SET_NAME_WRAPPER.add("Float");
 		SET_NAME_WRAPPER.add("Short");
+		SET_NAME_WRAPPER.add("Character");
 	}
 
 	public String toJson(final Object src) {
 		Object temp;
 		Class<?> clazz = src.getClass();
 		if (clazz.isArray()) {
-			temp = getArrayValue(src);
+			temp = getValueElementArray(src);
 		} else if (Collection.class.isAssignableFrom(clazz)) {
-			temp = getCollectionValue((Collection) src);
+			temp = getValueElementCollection((Collection) src);
 		} else if (Map.class.isAssignableFrom(clazz)) {
-			temp = getMapValue((Map) src);
+			temp = getValueEntrySetMap((Map) src);
 		} else {
 			temp = getValueMemberClass(src);
 		}
@@ -42,14 +43,14 @@ public class MyGson {
 	}
 
 	@SuppressWarnings("unchecked")
-	private JSONObject getMapValue(Map value) {
+	private JSONObject getValueEntrySetMap(Map value) {
 		JSONObject jsonObject = new JSONObject();
 		value.forEach((key, val) -> jsonObject.put(key, getValueMemberClass(val)));
 		return jsonObject;
 	}
 
 	@SuppressWarnings("unchecked")
-	private JSONArray getCollectionValue(Collection value) {
+	private JSONArray getValueElementCollection(Collection value) {
 		JSONArray jsonArray = new JSONArray();
 		for (Object o : value) {
 			jsonArray.add(getValueMemberClass(o));
@@ -58,7 +59,7 @@ public class MyGson {
 	}
 
 	@SuppressWarnings("unchecked")
-	private JSONArray getArrayValue(Object array) {
+	private JSONArray getValueElementArray(Object array) {
 		JSONArray jsonArray = new JSONArray();
 		for (int i = 0; i < Array.getLength(array); i++) {
 			jsonArray.add(getValueMemberClass(Array.get(array, i)));
@@ -68,30 +69,28 @@ public class MyGson {
 
 	@SuppressWarnings("unchecked")
 	private Object getValueMemberClass(final Object src) {
-		JSONObject jsonObject = new JSONObject();
 		Class<?> clazz = src.getClass();
-		Field[] fields = clazz.getDeclaredFields();
 		if (clazz.isPrimitive() || isWrapper(clazz.getSimpleName())) {
 			return src;
 		} else {
+			Field[] fields = clazz.getDeclaredFields();
+			JSONObject jsonObject = new JSONObject();
 			for (Field field : fields) {
-				Class<?> type = field.getType();
-				boolean primitive = type.isPrimitive();
-				boolean isWrapper = isWrapper(type.getSimpleName());
 				field.setAccessible(true);
+				Class<?> type = field.getType();
 				try {
-					if (primitive || isWrapper) {
-						Object value = field.get(src);
+					Object value = field.get(src);
+					if (type.isPrimitive() || isWrapper(type.getSimpleName())) {
 						jsonObject.put(field.getName(), value);
 					} else {
-						jsonObject.put(field.getName(), getValueMemberClass(field.get(src)));
+						jsonObject.put(field.getName(), getValueMemberClass(value));
 					}
 				} catch (IllegalAccessException e) {
 					e.printStackTrace();
 				}
 			}
+			return jsonObject;
 		}
-		return jsonObject;
 	}
 
 	private boolean isWrapper(final String simpleName) {

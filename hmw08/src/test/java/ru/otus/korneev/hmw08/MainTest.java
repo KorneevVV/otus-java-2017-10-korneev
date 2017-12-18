@@ -17,7 +17,6 @@ import java.util.Map;
 public class MainTest {
 
 	private Gson gson;
-	private Serializer myGson2;
 	private MyGson myGson;
 	private ExampleClass exampleClass;
 	private ExampleSimpleClass exampleSimpleClass;
@@ -25,7 +24,6 @@ public class MainTest {
 	@Before
 	public void getGson() {
 		gson = new Gson();
-		myGson2 = new Serializer();
 		myGson = new MyGson();
 		exampleClass = new ExampleClass();
 		exampleSimpleClass = new ExampleSimpleClass();
