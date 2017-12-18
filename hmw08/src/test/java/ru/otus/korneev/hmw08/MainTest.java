@@ -17,14 +17,18 @@ import java.util.Map;
 public class MainTest {
 
 	private Gson gson;
+	private Serializer myGson2;
 	private MyGson myGson;
 	private ExampleClass exampleClass;
+	private ExampleSimpleClass exampleSimpleClass;
 
 	@Before
 	public void getGson() {
 		gson = new Gson();
+		myGson2 = new Serializer();
 		myGson = new MyGson();
 		exampleClass = new ExampleClass();
+		exampleSimpleClass = new ExampleSimpleClass();
 	}
 
 	@Test
@@ -34,8 +38,14 @@ public class MainTest {
 	}
 
 	@Test
+	public void exampleSimpleClass() {
+		ExampleSimpleClass obg = gson.fromJson(myGson.toJson(exampleSimpleClass), ExampleSimpleClass.class);
+		assertEquals(exampleSimpleClass, obg);
+	}
+
+	@Test
 	public void arrayExampleClass() {
-		ExampleClass[] arrayExampleClass = new ExampleClass[]{exampleClass, exampleClass};
+		ExampleClass[] arrayExampleClass = new ExampleClass[]{new ExampleClass(), new ExampleClass()};
 		ExampleClass[] arrayFromMyGson = gson.fromJson(myGson.toJson(arrayExampleClass), ExampleClass[].class);
 		assertArrayEquals(arrayExampleClass, arrayFromMyGson);
 	}
@@ -63,9 +73,12 @@ public class MainTest {
 
 	@Test
 	public void listBoolean() {
-		Boolean[] arrayBoolean = new Boolean[]{true, false};
-		Boolean[] arrayFromMyGson = gson.fromJson(myGson.toJson(arrayBoolean), Boolean[].class);
-		assertArrayEquals(arrayBoolean, arrayFromMyGson);
+		List<Boolean> listBoolean = new ArrayList<>();
+		listBoolean.add(true);
+		listBoolean.add(false);
+		Type type = new TypeToken<List<Boolean>>(){}.getType();
+		List<Boolean> listFromMyGson = gson.fromJson(myGson.toJson(listBoolean), type);
+		assertEquals(listBoolean, listFromMyGson);
 	}
 
 	@Test
@@ -74,13 +87,14 @@ public class MainTest {
 		listExampleClass.add(exampleClass);
 		listExampleClass.add(exampleClass);
 		Type type = new TypeToken<List<ExampleClass>>(){}.getType();
+		System.out.println(myGson.toJson(listExampleClass));
 		List<ExampleClass> arrayFromMyGson = gson.fromJson(myGson.toJson(listExampleClass),type);
 		assertEquals(listExampleClass, arrayFromMyGson);
 	}
 
 	@Test
 	public void mapExampleClass() {
-		Map<String,ExampleClass> mapExampleClass = new HashMap<>();
+		Map<String, ExampleClass> mapExampleClass = new HashMap<>();
 		mapExampleClass.put("one",exampleClass);
 		mapExampleClass.put("two",exampleClass);
 		Type type = new TypeToken<Map<String, ExampleClass>>(){}.getType();
