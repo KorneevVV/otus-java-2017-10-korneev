@@ -13,9 +13,9 @@ import java.util.Set;
 
 public class MyGson {
 
-	private final Set<String> SET_NAME_WRAPPER = new HashSet<>();
+	private final static Set<String> SET_NAME_WRAPPER = new HashSet<>();
 
-	{
+	static {
 		SET_NAME_WRAPPER.add("String");
 		SET_NAME_WRAPPER.add("Integer");
 		SET_NAME_WRAPPER.add("Boolean");
