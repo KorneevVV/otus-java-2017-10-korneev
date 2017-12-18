@@ -29,7 +29,6 @@ public class MainTest {
 
 	@Test
 	public void exampleClass() {
-//		System.out.println(gson.toJson(exampleClass));
 		ExampleClass obg = gson.fromJson(myGson.toJson(exampleClass), ExampleClass.class);
 		assertEquals(exampleClass, obg);
 	}

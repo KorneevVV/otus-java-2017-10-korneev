@@ -3,7 +3,7 @@ package ru.otus.korneev.hmw08;
 public class ExampleClass {
 	private int intEC = 0;
 	private double doublEC = 0.505;
-	private String stringEC = "value innerString";
+	private String stringEC = "value String";
 	private Boolean boolEC = Boolean.TRUE;
 	private Integer integerEC = 11;
 	private ExampleSimpleClass exampleSimpleClass = new ExampleSimpleClass();
