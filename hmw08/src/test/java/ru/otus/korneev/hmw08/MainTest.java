@@ -85,7 +85,6 @@ public class MainTest {
 		listExampleClass.add(exampleClass);
 		listExampleClass.add(exampleClass);
 		Type type = new TypeToken<List<ExampleClass>>(){}.getType();
-		System.out.println(myGson.toJson(listExampleClass));
 		List<ExampleClass> arrayFromMyGson = gson.fromJson(myGson.toJson(listExampleClass),type);
 		assertEquals(listExampleClass, arrayFromMyGson);
 	}

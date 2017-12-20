@@ -28,6 +28,10 @@ public class MyGson {
 	}
 
 	public String toJson(final Object src) {
+		return ((JSONAware) getValueObject(src)).toJSONString();
+	}
+
+	private Object getValueObject(Object src) {
 		Object temp;
 		Class<?> clazz = src.getClass();
 		if (clazz.isArray()) {
@@ -39,13 +43,13 @@ public class MyGson {
 		} else {
 			temp = getValueMemberClass(src);
 		}
-		return ((JSONAware) temp).toJSONString();
+		return temp;
 	}
 
 	@SuppressWarnings("unchecked")
 	private JSONObject getValueEntrySetMap(Map value) {
 		JSONObject jsonObject = new JSONObject();
-		value.forEach((key, val) -> jsonObject.put(key, getValueMemberClass(val)));
+		value.forEach((key, val) -> jsonObject.put(key, getValueObject(val)));
 		return jsonObject;
 	}
 
@@ -53,7 +57,7 @@ public class MyGson {
 	private JSONArray getValueElementCollection(Collection value) {
 		JSONArray jsonArray = new JSONArray();
 		for (Object o : value) {
-			jsonArray.add(getValueMemberClass(o));
+			jsonArray.add(getValueObject(o));
 		}
 		return jsonArray;
 	}
@@ -62,7 +66,7 @@ public class MyGson {
 	private JSONArray getValueElementArray(Object array) {
 		JSONArray jsonArray = new JSONArray();
 		for (int i = 0; i < Array.getLength(array); i++) {
-			jsonArray.add(getValueMemberClass(Array.get(array, i)));
+			jsonArray.add(getValueObject(Array.get(array, i)));
 		}
 		return jsonArray;
 	}
@@ -83,7 +87,7 @@ public class MyGson {
 					if (type.isPrimitive() || isWrapper(type.getSimpleName())) {
 						jsonObject.put(field.getName(), value);
 					} else {
-						jsonObject.put(field.getName(), getValueMemberClass(value));
+						jsonObject.put(field.getName(), getValueObject(value));
 					}
 				} catch (IllegalAccessException e) {
 					e.printStackTrace();
