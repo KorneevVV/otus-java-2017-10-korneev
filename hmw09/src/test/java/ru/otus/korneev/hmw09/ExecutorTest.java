@@ -8,6 +8,7 @@ import ru.otus.korneev.hmw09.user.UserDataSet;
 import static org.junit.Assert.assertEquals;
 
 import java.lang.reflect.InvocationTargetException;
+import java.math.BigDecimal;
 import java.sql.*;
 
 public class ExecutorTest {
@@ -23,7 +24,7 @@ public class ExecutorTest {
 
     private static void createTable(final Connection connection) throws SQLException {
         Statement statement = connection.createStatement();
-        statement.execute("CREATE TABLE USR (id int auto_increment primary key, name varchar, age int)");
+        statement.execute("CREATE TABLE USR (id int auto_increment primary key, name varchar, age int, salary NUMBER)");
     }
 
     @Test
@@ -32,6 +33,7 @@ public class ExecutorTest {
         userActual.setAge(22);
         userActual.setName("Ivan2");
         userActual.setId(1);
+        userActual.setSalary(BigDecimal.TEN);
         executor.save(userActual);
         UserDataSet userExcepted = executor.load(1, UserDataSet.class);
         assertEquals(userExcepted, userActual);
@@ -43,6 +45,7 @@ public class ExecutorTest {
         user1.setAge(55);
         user1.setName("Ivan5");
         user1.setId(1);
+        user1.setSalary(BigDecimal.TEN);
         executor.save(user1);
         Statement stm = executor.getConnection().createStatement();
         ResultSet res = stm.executeQuery("SELECT * FROM USR WHERE id = 1");

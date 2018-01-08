@@ -23,6 +23,7 @@ public class ReflectionHelper {
         SET_NAME_WRAPPER.add("Float");
         SET_NAME_WRAPPER.add("Short");
         SET_NAME_WRAPPER.add("Character");
+        SET_NAME_WRAPPER.add("BigDecimal");
 
         try {
             map.put(String.class, ResultSet.class.getDeclaredMethod("getString", String.class));
