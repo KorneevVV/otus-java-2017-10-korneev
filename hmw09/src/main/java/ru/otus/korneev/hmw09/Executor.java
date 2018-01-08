@@ -22,6 +22,7 @@ public class Executor implements AutoCloseable {
         Statement statement = connection.createStatement();
         String fieldValue = ReflectionHelper.objectToString(user);
         statement.execute(String.format(INSERT, user.getId(), fieldValue));
+        statement.close();
     }
 
     <T extends DataSet> T load(final long id, final Class<T> clazz) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, SQLException {
@@ -31,7 +32,7 @@ public class Executor implements AutoCloseable {
         resultSet.next();
         T dataSet = ReflectionHelper.fillingObject(resultSet, clazz);
         dataSet.setId(id);
-
+        statement.close();
         return dataSet;
     }
 
