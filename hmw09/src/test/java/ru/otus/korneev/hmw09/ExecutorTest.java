@@ -1,5 +1,7 @@
 package ru.otus.korneev.hmw09;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -14,17 +16,24 @@ import java.sql.*;
 public class ExecutorTest {
 
     private static Executor executor;
+    private static Connection connection;
 
     @BeforeClass
     public static void initBD() throws SQLException {
-        Connection connection = ConnectionHelper.getConnection();
+        connection = ConnectionHelper.getConnection();
         executor = new Executor(connection);
-        createTable(connection);
     }
 
-    private static void createTable(final Connection connection) throws SQLException {
+    @Before
+    public void createTable() throws SQLException {
         Statement statement = connection.createStatement();
         statement.execute("CREATE TABLE USR (id int auto_increment primary key, name varchar, age int, salary NUMBER)");
+    }
+
+    @After
+    public void dropTable() throws SQLException {
+        Statement statement = connection.createStatement();
+        statement.executeUpdate("DROP TABLE USR");
     }
 
     @Test
@@ -53,6 +62,5 @@ public class ExecutorTest {
         assertEquals(55, res.getInt("age"));
         assertEquals("Ivan5", res.getString("name"));
         assertEquals(1, res.getLong("id"));
-        stm.executeUpdate("TRUNCATE TABLE USR");
     }
 }

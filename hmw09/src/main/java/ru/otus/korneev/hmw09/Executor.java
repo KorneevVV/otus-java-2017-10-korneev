@@ -10,7 +10,7 @@ import java.sql.Statement;
 
 public class Executor implements AutoCloseable {
 
-    private static final String INSERT = "INSERT INTO USR VALUES(%s, %s)";
+    private static final String INSERT = "INSERT INTO USR VALUES(DEFAULT, %s)";
     private static final String SELECT = "SELECT * FROM USR WHERE id = %s";
     private final Connection connection;
 
@@ -21,7 +21,7 @@ public class Executor implements AutoCloseable {
     <T extends DataSet> void save(final T user) throws SQLException, IllegalAccessException {
         Statement statement = connection.createStatement();
         String fieldValue = ReflectionHelper.objectToString(user);
-        statement.execute(String.format(INSERT, user.getId(), fieldValue));
+        statement.execute(String.format(INSERT, fieldValue));
         statement.close();
     }
 
