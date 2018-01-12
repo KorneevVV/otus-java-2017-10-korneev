@@ -54,6 +54,4 @@ public class DBServiceImplTest {
         assertEquals("Ivan5", res.getString("name"));
         assertEquals(1, res.getLong("id"));
     }
-
-
 }

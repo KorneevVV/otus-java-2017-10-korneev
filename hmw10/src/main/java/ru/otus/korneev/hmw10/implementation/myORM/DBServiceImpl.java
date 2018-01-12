@@ -57,6 +57,11 @@ public class DBServiceImpl implements DBService {
     }
 
     @Override
+    public String getLocalStatus() {
+        return null;
+    }
+
+    @Override
     public void close() throws Exception {
         connection.close();
     }

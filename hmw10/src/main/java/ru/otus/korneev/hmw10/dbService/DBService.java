@@ -11,4 +11,5 @@ public interface DBService extends AutoCloseable {
 
     <T extends DataSet> T load(final long id, final Class<T> clazz) throws InvocationTargetException, NoSuchMethodException, InstantiationException, SQLException, IllegalAccessException;
 
+    String getLocalStatus();
 }

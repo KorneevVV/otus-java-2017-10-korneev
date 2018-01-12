@@ -1,0 +1,54 @@
+package ru.otus.korneev.hmw10.implementation.hibernate;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import ru.otus.korneev.hmw10.implementation.hibernate.userDataSet.AddressDataSet;
+import ru.otus.korneev.hmw10.implementation.hibernate.userDataSet.UserDataSetH;
+
+import java.sql.SQLException;
+
+import static org.junit.Assert.assertEquals;
+
+public class DBServiceHibernateImplTest {
+
+    private static DBServiceHibernateImpl dbService;
+
+    @Before
+    public void createTable() throws SQLException, InterruptedException {
+        dbService = new DBServiceHibernateImpl();
+    }
+
+    @After
+    public void dropTable() throws Exception {
+        dbService.close();
+    }
+
+    @Test
+    public void loadTest() throws Exception {
+        UserDataSetH userActual = new UserDataSetH();
+        userActual.setAge(22);
+        userActual.setName("Ivan2");
+        userActual.setId(1);
+        AddressDataSet address = new AddressDataSet();
+        address.setStreet("address");
+        userActual.setAddressDataSet(address);
+        dbService.save(userActual);
+        UserDataSetH userExcepted = dbService.load(1, UserDataSetH.class);
+        assertEquals(userExcepted, userActual);
+    }
+
+    @Test
+    public void saveTest() throws Exception {
+        UserDataSetH userActual = new UserDataSetH();
+        userActual.setAge(22);
+        userActual.setName("Ivan2");
+        userActual.setId(1);
+        AddressDataSet address = new AddressDataSet();
+        address.setStreet("address");
+        userActual.setAddressDataSet(address);
+        dbService.save(userActual);
+        UserDataSetH userExcepted = dbService.load(1, UserDataSetH.class);
+        assertEquals(userExcepted, userActual);
+    }
+}

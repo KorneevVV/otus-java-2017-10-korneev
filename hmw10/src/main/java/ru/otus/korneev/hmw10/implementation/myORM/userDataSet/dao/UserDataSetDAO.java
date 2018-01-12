@@ -21,25 +21,25 @@ public class UserDataSetDAO extends DataSetDAO{
     }
 
     @Override
-    public void createTable(final Connection connection) throws SQLException {
-        Statement statement = connection.createStatement();
+    public void createTable(final Object connection) throws SQLException {
+        Statement statement = ((Connection)connection).createStatement();
         statement.execute(CREATE);
     }
 
     @Override
-    public void deleteTable(Connection connection) throws SQLException {
-        Statement statement = connection.createStatement();
+    public void deleteTable(Object connection) throws SQLException {
+        Statement statement = ((Connection)connection).createStatement();
         statement.executeUpdate(DELETE);
     }
 
-    public   <T extends DataSet> void save(final T user, final Connection connection) throws SQLException, IllegalAccessException {
-        Statement statement = connection.createStatement();
+    public   <T extends DataSet> void save(final T user, final Object connection) throws SQLException, IllegalAccessException {
+        Statement statement = ((Connection)connection).createStatement();
         String fieldValue = ReflectionHelper.objectToString(user);
         statement.execute(String.format(INSERT, fieldValue));
     }
 
-    public <T extends DataSet> T load(final long id, final Class<T> clazz, final Connection connection) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, SQLException {
-        Statement statement = connection.createStatement();
+    public <T extends DataSet> T load(final long id, final Class<T> clazz, final Object connection) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, SQLException {
+        Statement statement = ((Connection)connection).createStatement();
         statement.execute(String.format(SELECT, id));
         ResultSet resultSet = statement.getResultSet();
         resultSet.next();

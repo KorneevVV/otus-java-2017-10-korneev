@@ -2,6 +2,8 @@ package ru.otus.korneev.hmw10.implementation.myORM.helpers;
 
 import ru.otus.korneev.hmw10.dataSets.DataSet;
 import ru.otus.korneev.hmw10.dataSets.dao.DataSetDAO;
+import ru.otus.korneev.hmw10.implementation.hibernate.userDataSet.UserDataSetH;
+import ru.otus.korneev.hmw10.implementation.hibernate.userDataSet.dao.UserDataSetHDAO;
 import ru.otus.korneev.hmw10.implementation.myORM.userDataSet.UserDataSet;
 import ru.otus.korneev.hmw10.implementation.myORM.userDataSet.dao.UserDataSetDAO;
 
@@ -14,6 +16,7 @@ public class RegistryDataSet {
 
     public static void register(){
         REGISTRY.put(UserDataSet.class, UserDataSetDAO.class);
+        REGISTRY.put(UserDataSetH.class, UserDataSetHDAO.class);
         // .....
     }
 

@@ -1,10 +1,14 @@
 package ru.otus.korneev.hmw10.dataSets;
 
 
+import javax.persistence.*;
 import java.util.Objects;
 
+@MappedSuperclass
 public abstract class DataSet{
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     public long getId() {
