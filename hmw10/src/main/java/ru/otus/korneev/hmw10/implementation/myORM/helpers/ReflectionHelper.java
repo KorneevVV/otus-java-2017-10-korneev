@@ -99,8 +99,8 @@ public class ReflectionHelper {
     }
 
     public static <T> T fillingObject(Object obj, final Class<T> clazz) throws InvocationTargetException, IllegalAccessException, NoSuchMethodException, InstantiationException {
-        T result=  clazz.getConstructor().newInstance();
-        Field[] arrayFields = result.getClass().getDeclaredFields();
+        T result = clazz.getConstructor().newInstance();
+        Field[] arrayFields = clazz.getDeclaredFields();
         for (Field field : arrayFields) {
             field.setAccessible(true);
             String fieldName = field.getName();

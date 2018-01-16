@@ -29,7 +29,6 @@ public class DBServiceHibernateImplTest {
         UserDataSetH userActual = new UserDataSetH();
         userActual.setAge(22);
         userActual.setName("Ivan2");
-        userActual.setId(1);
         AddressDataSet address = new AddressDataSet();
         address.setStreet("address");
         userActual.setAddressDataSet(address);
@@ -43,7 +42,6 @@ public class DBServiceHibernateImplTest {
         UserDataSetH userActual = new UserDataSetH();
         userActual.setAge(22);
         userActual.setName("Ivan2");
-        userActual.setId(1);
         AddressDataSet address = new AddressDataSet();
         address.setStreet("address");
         userActual.setAddressDataSet(address);

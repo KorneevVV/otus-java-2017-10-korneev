@@ -45,13 +45,13 @@ public class DBServiceImpl implements DBService {
     }
 
     @Override
-    public <T extends DataSet> void save(final T data) throws SQLException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, InstantiationException {
+    public <T extends DataSet> void save(final T data) throws SQLException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         DataSetDAO dao = RegistryDataSet.getDataSetDAO(data.getClass()).getDeclaredConstructor().newInstance();
         dao.save(data, connection);
     }
 
     @Override
-    public <T extends DataSet> T load(final long id, final Class<T> clazz) throws InvocationTargetException, NoSuchMethodException, InstantiationException, SQLException, IllegalAccessException {
+    public <T extends DataSet> T load(final long id, final Class<T> clazz) throws InvocationTargetException, NoSuchMethodException, InstantiationException, SQLException, IllegalAccessException, NoSuchFieldException {
         DataSetDAO dao = RegistryDataSet.getDataSetDAO(clazz).getDeclaredConstructor().newInstance();
         return dao.load(id, clazz, connection);
     }

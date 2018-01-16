@@ -32,7 +32,6 @@ public class DBServiceImplTest {
         UserDataSet userActual = new UserDataSet();
         userActual.setAge(22);
         userActual.setName("Ivan2");
-        userActual.setId(1);
         userActual.setSalary(BigDecimal.TEN);
         dbService.save(userActual);
         UserDataSet userExcepted = dbService.load(1, UserDataSet.class);
@@ -44,7 +43,6 @@ public class DBServiceImplTest {
         UserDataSet user1 = new UserDataSet();
         user1.setAge(55);
         user1.setName("Ivan5");
-        user1.setId(1);
         user1.setSalary(BigDecimal.TEN);
         dbService.save(user1);
         Statement stm = dbService.getConnection().createStatement();

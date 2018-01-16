@@ -12,7 +12,7 @@ public class UserDataSetH extends DataSet{
 	}
 
 	public UserDataSetH(String name, int age, AddressDataSet addressDataSet) {
-		this.setId(-1);
+//		this.setId(-1);
 		this.name = name;
 		this.age = age;
 		this.addressDataSet = addressDataSet;
@@ -58,25 +58,5 @@ public class UserDataSetH extends DataSet{
 				", age=" + age +
 				", addressDataSet=" + addressDataSet +
 				'}';
-	}
-
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
-
-		UserDataSetH that = (UserDataSetH) o;
-
-		if (age != that.age) return false;
-		if (name != null ? !name.equals(that.name) : that.name != null) return false;
-		return addressDataSet != null ? addressDataSet.equals(that.addressDataSet) : that.addressDataSet == null;
-	}
-
-	@Override
-	public int hashCode() {
-		int result = name != null ? name.hashCode() : 0;
-		result = 31 * result + age;
-		result = 31 * result + (addressDataSet != null ? addressDataSet.hashCode() : 0);
-		return result;
 	}
 }
