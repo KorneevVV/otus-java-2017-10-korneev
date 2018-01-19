@@ -16,6 +16,7 @@
         <module name="hmw08" />
         <module name="hmw09" />
         <module name="hmw10" />
+        <module name="hmw11" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +30,7 @@
       <module name="hmw08" target="1.8" />
       <module name="hmw09" target="1.8" />
       <module name="hmw10" target="1.8" />
+      <module name="hmw11" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
