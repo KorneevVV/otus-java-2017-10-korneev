@@ -12,10 +12,10 @@ import java.sql.Statement;
 
 public class UserDataSetDAO extends DataSetDAO {
 
-    private static final String INSERT = "INSERT INTO USR VALUES(DEFAULT, %s)";
-    private static final String SELECT = "SELECT * FROM USR WHERE id = %s";
-    private static final String CREATE = "CREATE TABLE USR (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR, age INT, salary NUMBER)";
-    private static final String DELETE = "DROP TABLE USR";
+    private static final String INSERT = "INSERT INTO USER VALUES(DEFAULT, %s)";
+    private static final String SELECT = "SELECT * FROM USER WHERE id = %s";
+    private static final String CREATE = "CREATE TABLE USER (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR, age INT, salary NUMBER)";
+    private static final String DELETE = "DROP TABLE USER";
 
     public UserDataSetDAO() {
     }
@@ -37,7 +37,7 @@ public class UserDataSetDAO extends DataSetDAO {
         Statement statement = ((Connection) connection).createStatement();
         String fieldValue = ReflectionHelper.objectToString(user);
         statement.execute(String.format(INSERT, fieldValue));
-        ResultSet res = statement.executeQuery("SELECT COUNT(*) FROM USR");
+        ResultSet res = statement.executeQuery("SELECT COUNT(*) FROM USER");
         while (res.next()) {
             super.setId(res.getLong("COUNT(*)"), (Class<T>) user.getClass(), user);
         }
