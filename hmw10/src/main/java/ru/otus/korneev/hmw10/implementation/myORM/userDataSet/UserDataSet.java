@@ -11,7 +11,7 @@ public class UserDataSet extends DataSet{
     private int age;
     private BigDecimal salary;
 
-    public UserDataSet() throws Exception {
+    public UserDataSet() {
     }
 
     public String getName() {

@@ -6,8 +6,6 @@ import org.junit.Test;
 import ru.otus.korneev.hmw10.implementation.hibernate.userDataSet.AddressDataSet;
 import ru.otus.korneev.hmw10.implementation.hibernate.userDataSet.UserDataSetH;
 
-import java.sql.SQLException;
-
 import static org.junit.Assert.assertEquals;
 
 public class DBServiceHibernateImplTest {
@@ -15,7 +13,7 @@ public class DBServiceHibernateImplTest {
     private static DBServiceHibernateImpl dbService;
 
     @Before
-    public void createTable() throws SQLException, InterruptedException {
+    public void createTable() {
         dbService = new DBServiceHibernateImpl();
     }
 

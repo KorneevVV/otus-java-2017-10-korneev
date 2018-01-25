@@ -13,10 +13,7 @@ public class DBServiceImpWithCache extends DBServiceImpl {
 
     private CacheEngine<Long, Object> cache;
 
-    private DBServiceImpWithCache() throws SQLException {
-    }
-
-    public  DBServiceImpWithCache(int maxElements, long lifeTimeMs, long idleTimeMs, boolean isEternal) throws SQLException {
+    public DBServiceImpWithCache(int maxElements, long lifeTimeMs, long idleTimeMs, boolean isEternal) throws SQLException {
         super();
         cache = new CacheEngineImpl<>(maxElements, lifeTimeMs, idleTimeMs, isEternal);
     }
@@ -31,9 +28,21 @@ public class DBServiceImpWithCache extends DBServiceImpl {
     @Override
     public <T extends DataSet> T load(long id, Class<T> clazz) throws InvocationTargetException, NoSuchMethodException, InstantiationException, SQLException, IllegalAccessException, NoSuchFieldException {
         MyElement<Long, Object> element = cache.get(id);
-        if (element != null || element.getValue() != null){
-            return (T)element.getValue();
+        if (element != null && element.getValue() != null) {
+            return (T) element.getValue();
         }
         return super.load(id, clazz);
+    }
+
+    public int getHitCount() {
+        return cache.getHitCount();
+    }
+
+    public int getMissCount() {
+        return cache.getMissCount();
+    }
+
+    public void disposeCache() {
+        cache.dispose();
     }
 }

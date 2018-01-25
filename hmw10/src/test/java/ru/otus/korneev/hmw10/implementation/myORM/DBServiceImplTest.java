@@ -46,7 +46,7 @@ public class DBServiceImplTest {
         user1.setSalary(BigDecimal.TEN);
         dbService.save(user1);
         Statement stm = dbService.getConnection().createStatement();
-        ResultSet res = stm.executeQuery("SELECT * FROM USR WHERE id = 1");
+        ResultSet res = stm.executeQuery("SELECT * FROM USER WHERE id = 1");
         res.next();
         assertEquals(55, res.getInt("age"));
         assertEquals("Ivan5", res.getString("name"));
