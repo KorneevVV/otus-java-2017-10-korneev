@@ -14,8 +14,6 @@
     <artifactId>hmw01</artifactId>
     <version>0.1-SNAPSHOT</version>
 
-    <name>hmw01-maven</name>
-
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>
