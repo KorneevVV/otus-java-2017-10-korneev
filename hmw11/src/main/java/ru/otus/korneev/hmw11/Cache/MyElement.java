@@ -2,7 +2,6 @@ package ru.otus.korneev.hmw11.Cache;
 
 import java.lang.ref.SoftReference;
 
-@SuppressWarnings("WeakerAccess")
 public class MyElement<K, V> {
     private final K key;
     private final SoftReference<V> value;
@@ -16,11 +15,11 @@ public class MyElement<K, V> {
         this.lastAccessTime = getCurrentTime();
     }
 
-    protected long getCurrentTime() {
+    long getCurrentTime() {
         return System.currentTimeMillis();
     }
 
-    public K getKey() {
+    K getKey() {
         return key;
     }
 
@@ -28,15 +27,15 @@ public class MyElement<K, V> {
         return value.get();
     }
 
-    public long getCreationTime() {
+    long getCreationTime() {
         return creationTime;
     }
 
-    public long getLastAccessTime() {
+    long getLastAccessTime() {
         return lastAccessTime;
     }
 
-    public void setAccessed() {
+    void setAccessed() {
         lastAccessTime = getCurrentTime();
     }
 }

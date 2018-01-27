@@ -21,15 +21,15 @@ public class DBServiceImpWithCache extends DBServiceImpl {
     @Override
     public <T extends DataSet> void save(T data) throws SQLException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, InstantiationException, NoSuchFieldException {
         super.save(data);
-        cache.put(new MyElement<>(data.getId(), data));
+        cache.put(data.getId(), data);
     }
 
     @SuppressWarnings("unchecked")
     @Override
     public <T extends DataSet> T load(long id, Class<T> clazz) throws InvocationTargetException, NoSuchMethodException, InstantiationException, SQLException, IllegalAccessException, NoSuchFieldException {
-        MyElement<Long, Object> element = cache.get(id);
-        if (element != null && element.getValue() != null) {
-            return (T) element.getValue();
+        Object element = cache.get(id);
+        if (element != null) {
+            return (T) element;
         }
         return super.load(id, clazz);
     }
