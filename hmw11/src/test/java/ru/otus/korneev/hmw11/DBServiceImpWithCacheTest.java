@@ -17,7 +17,7 @@ public class DBServiceImpWithCacheTest {
 
     @Before
     public void createTable() throws SQLException {
-        dbService = new DBServiceImpWithCache(2, 1000, 0, false);
+        dbService = new DBServiceImpWithCache(2, 100, 0, false);
     }
 
     @After
@@ -31,22 +31,15 @@ public class DBServiceImpWithCacheTest {
         userActual1.setAge(22);
         userActual1.setName("Ivan1");
         userActual1.setSalary(BigDecimal.TEN);
-        UserDataSet userActual2 = new UserDataSet();
-        userActual2.setAge(23);
-        userActual2.setName("Ivan2");
-        userActual2.setSalary(BigDecimal.TEN);
-        UserDataSet userActual3 = new UserDataSet();
-        userActual3.setAge(24);
-        userActual3.setName("Ivan3");
-        userActual3.setSalary(BigDecimal.TEN);
         dbService.save(userActual1);
-        dbService.save(userActual2);
-        dbService.save(userActual3);
-
+        dbService.save(userActual1);
+        dbService.save(userActual1);
+        dbService.save(userActual1);
         UserDataSet userExcepted1 = dbService.load(1, UserDataSet.class);
         UserDataSet userExcepted2 = dbService.load(2, UserDataSet.class);
         UserDataSet userExcepted3 = dbService.load(3, UserDataSet.class);
-        assertEquals(2, dbService.getHitCount());
-        assertEquals(1, dbService.getMissCount());
+        UserDataSet userExcepted4 = dbService.load(4, UserDataSet.class);
+        assertEquals("Hit count",2, dbService.getHitCount());
+        assertEquals("Miss count",2, dbService.getMissCount());
     }
 }

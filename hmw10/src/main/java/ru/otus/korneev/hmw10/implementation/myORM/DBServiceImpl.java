@@ -1,5 +1,6 @@
 package ru.otus.korneev.hmw10.implementation.myORM;
 
+import ru.otus.korneev.hmw10.Cache.CacheEngine;
 import ru.otus.korneev.hmw10.dbService.DBService;
 import ru.otus.korneev.hmw10.dataSets.dao.DataSetDAO;
 import ru.otus.korneev.hmw10.dataSets.DataSet;
@@ -58,6 +59,11 @@ public class DBServiceImpl implements DBService {
 
     @Override
     public String getLocalStatus() {
+        return null;
+    }
+
+    @Override
+    public CacheEngine getCacheEngine() {
         return null;
     }
 

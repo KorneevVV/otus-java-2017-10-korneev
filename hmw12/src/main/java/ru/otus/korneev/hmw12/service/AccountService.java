@@ -1,35 +1,14 @@
 package ru.otus.korneev.hmw12.service;
 
-import java.util.HashMap;
-import java.util.Map;
+public interface AccountService {
 
-public class AccountService {
-    private final Map<String, UserProfile> loginToProfile;
-    private final Map<String, UserProfile> sessionIdToProfile;
+    void addNewUser(final UserProfile userProfile);
 
-    public AccountService() {
-        loginToProfile = new HashMap<>();
-        sessionIdToProfile = new HashMap<>();
-    }
+    UserProfile getUserByLogin(final String login);
 
-    public void addNewUser(final UserProfile userProfile) {
-        loginToProfile.put(userProfile.getLogin(), userProfile);
-    }
+    UserProfile getUserBySessionId(final String sessionId);
 
-    public UserProfile getUserByLogin(final String login) {
-        return loginToProfile.get(login);
-    }
+    void addSession(final String sessionId, final UserProfile userProfile);
 
-    public UserProfile getUserBySessionId(final String sessionId) {
-        return sessionIdToProfile.get(sessionId);
-    }
-
-    public void addSession(final String sessionId, final UserProfile userProfile) {
-        sessionIdToProfile.put(sessionId, userProfile);
-    }
-
-    public void deleteSession(final String sessionId) {
-        sessionIdToProfile.remove(sessionId);
-    }
+    void deleteSession(final String sessionId);
 }
-

@@ -2,9 +2,8 @@ package ru.otus.korneev.hmw11.DBServiceWithCache;
 
 import ru.otus.korneev.hmw10.dataSets.DataSet;
 import ru.otus.korneev.hmw10.implementation.myORM.DBServiceImpl;
-import ru.otus.korneev.hmw11.Cache.CacheEngine;
+import ru.otus.korneev.hmw10.Cache.CacheEngine;
 import ru.otus.korneev.hmw11.Cache.CacheEngineImpl;
-import ru.otus.korneev.hmw11.Cache.MyElement;
 
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
@@ -32,6 +31,11 @@ public class DBServiceImpWithCache extends DBServiceImpl {
             return (T) element;
         }
         return super.load(id, clazz);
+    }
+
+    @Override
+    public CacheEngine getCacheEngine() {
+        return cache;
     }
 
     public int getHitCount() {

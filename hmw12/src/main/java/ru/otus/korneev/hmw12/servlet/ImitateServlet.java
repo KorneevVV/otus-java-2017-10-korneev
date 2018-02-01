@@ -15,19 +15,19 @@ import java.math.BigDecimal;
 public class ImitateServlet extends HttpServlet {
 
     private final DBServiceImpWithCache dbService;
+    private int id = 1;
 
     public ImitateServlet(final DBServiceImpWithCache dbService) {
         this.dbService = dbService;
     }
 
     public void doGet(final HttpServletRequest request,
-                      final HttpServletResponse response) throws ServletException, IOException {
+                      final HttpServletResponse response) throws IOException {
         doPost(request, response);
     }
 
     public void doPost(final HttpServletRequest request,
-                       final HttpServletResponse response) throws ServletException, IOException {
-
+                       final HttpServletResponse response) throws IOException {
         UserDataSet userActual1 = new UserDataSet();
         userActual1.setAge(22);
         userActual1.setName("Ivan1");
@@ -44,14 +44,14 @@ public class ImitateServlet extends HttpServlet {
             dbService.save(userActual1);
             dbService.save(userActual2);
             dbService.save(userActual3);
-            UserDataSet userExcepted1 = dbService.load(1, UserDataSet.class);
-            UserDataSet userExcepted2 = dbService.load(2, UserDataSet.class);
-            UserDataSet userExcepted3 = dbService.load(3, UserDataSet.class);
+            dbService.load(id++, UserDataSet.class);
+            dbService.load(id++, UserDataSet.class);
+            dbService.load(id++, UserDataSet.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
-        response.getWriter().println("В базу добавлено 3 записи, так же произведено чтение из базы.");
+        response.getWriter().println("В базу добавлено 3 записи, так же произведено чтение из базы. <br><a href=/index.html> <b>Обратно</b></a>");
     }
 }

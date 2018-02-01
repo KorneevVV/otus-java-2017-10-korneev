@@ -11,19 +11,19 @@ import java.io.IOException;
 
 public class SignUpServlet  extends HttpServlet {
 
-    private final AccountService accountService;
+    private final AccountService accountServiceImpl;
 
-    public SignUpServlet(final AccountService accountService) {
-        this.accountService = accountService;
+    public SignUpServlet(final AccountService accountServiceImpl) {
+        this.accountServiceImpl = accountServiceImpl;
     }
 
     public void doGet(final HttpServletRequest request,
-                      final HttpServletResponse response) throws ServletException, IOException {
+                      final HttpServletResponse response) throws IOException {
         doPost(request,response);
     }
 
     public void doPost(final HttpServletRequest request,
-                       final HttpServletResponse response) throws ServletException, IOException {
+                       final HttpServletResponse response) throws IOException {
         String login = request.getParameter("login");
         String pass = request.getParameter("password");
 
@@ -34,9 +34,9 @@ public class SignUpServlet  extends HttpServlet {
         }
 
         final UserProfile user = new UserProfile(login, pass);
-        accountService.addNewUser(user);
+        accountServiceImpl.addNewUser(user);
 
         response.setStatus(HttpServletResponse.SC_OK);
-        response.getWriter().println("Вы успешно зарегистрированы");
+        response.getWriter().println("Вы успешно зарегистрированы, <a href=/index.html> <b>Обратно</b></a>");
     }
 }
