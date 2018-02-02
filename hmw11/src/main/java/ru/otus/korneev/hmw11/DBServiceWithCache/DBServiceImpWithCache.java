@@ -2,8 +2,7 @@ package ru.otus.korneev.hmw11.DBServiceWithCache;
 
 import ru.otus.korneev.hmw10.dataSets.DataSet;
 import ru.otus.korneev.hmw10.implementation.myORM.DBServiceImpl;
-import ru.otus.korneev.hmw10.Cache.CacheEngine;
-import ru.otus.korneev.hmw11.Cache.CacheEngineImpl;
+import ru.otus.korneev.hmw11.Cache.CacheEngine;
 
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
@@ -12,9 +11,9 @@ public class DBServiceImpWithCache extends DBServiceImpl {
 
     private CacheEngine<Long, Object> cache;
 
-    public DBServiceImpWithCache(int maxElements, long lifeTimeMs, long idleTimeMs, boolean isEternal) throws SQLException {
+    public DBServiceImpWithCache(CacheEngine<Long, Object> cache) throws SQLException {
         super();
-        cache = new CacheEngineImpl<>(maxElements, lifeTimeMs, idleTimeMs, isEternal);
+        this.cache = cache;
     }
 
     @Override
@@ -31,19 +30,6 @@ public class DBServiceImpWithCache extends DBServiceImpl {
             return (T) element;
         }
         return super.load(id, clazz);
-    }
-
-    @Override
-    public CacheEngine getCacheEngine() {
-        return cache;
-    }
-
-    public int getHitCount() {
-        return cache.getHitCount();
-    }
-
-    public int getMissCount() {
-        return cache.getMissCount();
     }
 
     public void disposeCache() {

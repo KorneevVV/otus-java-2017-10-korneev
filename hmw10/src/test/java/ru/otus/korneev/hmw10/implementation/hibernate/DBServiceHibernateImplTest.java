@@ -18,7 +18,7 @@ public class DBServiceHibernateImplTest {
     }
 
     @After
-    public void dropTable() throws Exception {
+    public void dropTable() {
         dbService.close();
     }
 

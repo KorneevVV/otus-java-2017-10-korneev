@@ -12,7 +12,6 @@ import ru.otus.korneev.hmw10.dbService.DBService;
 import ru.otus.korneev.hmw10.implementation.hibernate.userDataSet.AddressDataSet;
 import ru.otus.korneev.hmw10.implementation.hibernate.userDataSet.UserDataSetH;
 import ru.otus.korneev.hmw10.implementation.myORM.helpers.RegistryDataSet;
-import ru.otus.korneev.hmw10.Cache.CacheEngine;
 
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
@@ -80,12 +79,7 @@ public class DBServiceHibernateImpl implements DBService {
 		return runInSession(session -> session.getTransaction().getStatus().name());
 	}
 
-	@Override
-	public CacheEngine getCacheEngine() {
-		return null;
-	}
-
-	private <R> R runInSession(Function<Session, R> function) {
+ 	private <R> R runInSession(Function<Session, R> function) {
 		try (Session session = sessionFactory.openSession()) {
 			Transaction transaction = session.beginTransaction();
 			R result = function.apply(session);

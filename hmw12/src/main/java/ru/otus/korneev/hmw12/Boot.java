@@ -5,6 +5,9 @@ import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
+import ru.otus.korneev.hmw10.dbService.DBService;
+import ru.otus.korneev.hmw11.Cache.CacheEngine;
+import ru.otus.korneev.hmw11.Cache.CacheEngineImpl;
 import ru.otus.korneev.hmw11.DBServiceWithCache.DBServiceImpWithCache;
 import ru.otus.korneev.hmw12.service.AccountServiceImpl;
 import ru.otus.korneev.hmw12.service.AccountService;
@@ -25,7 +28,8 @@ public class Boot {
 
     public static void main(String[] args) throws Exception {
         Map<String, Object> property = new HashMap<>();
-        DBServiceImpWithCache dbService = new DBServiceImpWithCache(MAX_ELEMENT, LIFE_TIME_MS, IDLE_TIME_MS, IS_ETERNAL);
+        CacheEngine<Long, Object> cache = new CacheEngineImpl<>(MAX_ELEMENT, LIFE_TIME_MS, IDLE_TIME_MS, IS_ETERNAL);
+        DBService dbService = new DBServiceImpWithCache(cache);
         property.put("maxElements", MAX_ELEMENT);
         property.put("lifeTimeMs", LIFE_TIME_MS);
         property.put("idleTimeMs", IDLE_TIME_MS);
@@ -37,7 +41,7 @@ public class Boot {
         context.addServlet(new ServletHolder(new SignInServlet(accountService)), "/signin");
         context.addServlet(new ServletHolder(new SignUpServlet(accountService)), "/signup");
         context.addServlet(new ServletHolder(new ImitateServlet(dbService)), "/imitate");
-        context.addServlet(new ServletHolder(new StatisticServlet(dbService, property)), "/statistic");
+        context.addServlet(new ServletHolder(new StatisticServlet(cache, property)), "/statistic");
         Server server = new Server(8088);
         server.setHandler(new HandlerList(resource_handler, context));
         server.start();

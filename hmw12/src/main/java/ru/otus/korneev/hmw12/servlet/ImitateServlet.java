@@ -1,10 +1,8 @@
 package ru.otus.korneev.hmw12.servlet;
 
+import ru.otus.korneev.hmw10.dbService.DBService;
 import ru.otus.korneev.hmw10.implementation.myORM.userDataSet.UserDataSet;
-import ru.otus.korneev.hmw11.DBServiceWithCache.DBServiceImpWithCache;
-import ru.otus.korneev.hmw12.service.UserProfile;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,10 +12,10 @@ import java.math.BigDecimal;
 
 public class ImitateServlet extends HttpServlet {
 
-    private final DBServiceImpWithCache dbService;
+    private final DBService dbService;
     private int id = 1;
 
-    public ImitateServlet(final DBServiceImpWithCache dbService) {
+    public ImitateServlet(final DBService dbService) {
         this.dbService = dbService;
     }
 

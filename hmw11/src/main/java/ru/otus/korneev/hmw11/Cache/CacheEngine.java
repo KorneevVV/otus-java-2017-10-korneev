@@ -1,4 +1,4 @@
-package ru.otus.korneev.hmw10.Cache;
+package ru.otus.korneev.hmw11.Cache;
 
 public interface CacheEngine<K, V> {
 

@@ -18,7 +18,7 @@ public class DBServiceImplTest {
     private static DBServiceImpl dbService;
 
     @Before
-    public void createTable() throws SQLException, InterruptedException {
+    public void createTable() throws SQLException {
         dbService = new DBServiceImpl();
     }
 
