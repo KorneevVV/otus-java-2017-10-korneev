@@ -8,14 +8,14 @@ public class MyElement<K, V> {
     private final long creationTime;
     private long lastAccessTime;
 
-    public MyElement(K key, V value) {
+    MyElement(K key, V value) {
         this.key = key;
         this.value = new SoftReference<>(value);
         this.creationTime = getCurrentTime();
         this.lastAccessTime = getCurrentTime();
     }
 
-    long getCurrentTime() {
+    private long getCurrentTime() {
         return System.currentTimeMillis();
     }
 
@@ -27,15 +27,15 @@ public class MyElement<K, V> {
         return value.get();
     }
 
-    long getCreationTime() {
+    public long getCreationTime() {
         return creationTime;
     }
 
-    long getLastAccessTime() {
+    public long getLastAccessTime() {
         return lastAccessTime;
     }
 
-    void setAccessed() {
+    public void setAccessed() {
         lastAccessTime = getCurrentTime();
     }
 }
