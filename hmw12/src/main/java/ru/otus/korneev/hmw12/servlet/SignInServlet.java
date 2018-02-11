@@ -36,7 +36,7 @@ public class SignInServlet extends HttpServlet {
 
         UserProfile profile = accountServiceImpl.getUserByLogin(login);
 
-        if (profile != null && !(profile.getLogin().equals(login) && profile.getPass().equals(pass))) {
+        if (profile == null || !(profile.getLogin().equals(login) && profile.getPass().equals(pass))) {
             response.setContentType("text/html;charset=utf-8");
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             response.getWriter().println("Данный пользователь не зарегистрирован, <a href=/index.html> <b>Обратно</b></a>");
