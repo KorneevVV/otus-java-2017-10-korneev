@@ -11,14 +11,65 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
+    <properties>
+        <spring.version>5.0.3.RELEASE</spring.version>
+        <jetty.directory>C:\Program Files\jetty\webapps</jetty.directory>
+    </properties>
+
     <artifactId>hmw13</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <build>
+        <finalName>root</finalName>
+        <plugins>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <outputDirectory>${jetty.directory}</outputDirectory>
+                    <webResources>
+                        <resource>
+                            <directory>public_html</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
             <groupId>ru.otus.korneev</groupId>
+            <artifactId>hmw11</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.otus.korneev</groupId>
             <artifactId>hmw12</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
         </dependency>
     </dependencies>
 </project>
