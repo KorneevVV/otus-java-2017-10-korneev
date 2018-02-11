@@ -43,7 +43,7 @@ public class SignInServlet extends HttpServlet {
         } else {
             response.setContentType("text/html;charset=utf-8");
             response.setStatus(HttpServletResponse.SC_OK);
-            response.getWriter().println("Вы авторизолваны <br><a href=/statistic> <b>Прейти к статистике</b></a><br><a href=/index.html> <b>Обратно</b></a>");
+            response.getWriter().println("Вы авторизованы <br><a href=/statistic> <b>Прейти к статистике</b></a><br><a href=/index.html> <b>Обратно</b></a>");
 
         }
     }
