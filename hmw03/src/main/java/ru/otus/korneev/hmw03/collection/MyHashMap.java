@@ -178,9 +178,7 @@ public class MyHashMap<K, V> {
 			Object keyExternalNode = e.key;
 			if (key.equals(keyExternalNode)) {
 				Object valueExternalNode = e.value;
-				if (value.equals(valueExternalNode)) {
-					return true;
-				}
+				return value.equals(valueExternalNode);
 			}
 			return false;
 		}

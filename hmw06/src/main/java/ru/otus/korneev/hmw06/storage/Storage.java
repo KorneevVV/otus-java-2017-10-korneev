@@ -3,9 +3,11 @@ package ru.otus.korneev.hmw06.storage;
 import ru.otus.korneev.hmw06.banknote.Banknote;
 import ru.otus.korneev.hmw06.banknote.BanknoteType;
 import ru.otus.korneev.hmw06.exception.ExceptionCashOut;
-import ru.otus.korneev.hmw06.exception.ExceptionInvalidBanknote;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
 
 public class Storage {
 
@@ -23,7 +25,7 @@ public class Storage {
         return balance;
     }
 
-    public void cashIn(List<Banknote> banknotes) throws ExceptionInvalidBanknote {
+    public void cashIn(List<Banknote> banknotes) {
         for (Banknote banknote : banknotes) {
             for (CellsType cell : cells) {
                 if (cell.add(banknote)) {

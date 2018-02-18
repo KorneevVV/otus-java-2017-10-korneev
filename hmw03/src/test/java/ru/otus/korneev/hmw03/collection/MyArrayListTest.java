@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 
 public class MyArrayListTest {
 
-	private MyArrayList<String> myList = new MyArrayList<>(10);
+	private List<String> myList = new MyArrayList<>(10);
 
 	@Before
 	public void createMyList() {
@@ -28,8 +28,8 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void addAllForIndex() throws Exception {
-		ArrayList<String> arList = new ArrayList<>();
+	public void addAllForIndex() {
+		List<String> arList = new ArrayList<>();
 		arList.add("91");
 		arList.add("82");
 		arList.add("93");
@@ -41,7 +41,7 @@ public class MyArrayListTest {
 		arList.add("99");
 		arList.add("810");
 		assertEquals(true, myList.addAll(2, arList));
-		ArrayList<String> exList = new ArrayList<>();
+		List<String> exList = new ArrayList<>();
 		exList.add("0");
 		exList.add("1");
 		exList.add("91");
@@ -61,12 +61,12 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void addAllForIndex2() throws Exception {
-		ArrayList<String> arList = new ArrayList<>();
+	public void addAllForIndex2() {
+		List<String> arList = new ArrayList<>();
 		arList.add("91");
 		arList.add("82");
 		assertEquals(true, myList.addAll(2, arList));
-		ArrayList<String> exList = new ArrayList<>();
+		List<String> exList = new ArrayList<>();
 		exList.add("0");
 		exList.add("1");
 		exList.add("91");
@@ -78,42 +78,42 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void size() throws Exception {
+	public void size() {
 		assertEquals(5, myList.size());
 	}
 
 	@Test
-	public void isEmpty() throws Exception {
+	public void isEmpty() {
 		assertEquals(false, myList.isEmpty());
 		myList.clear();
 		assertEquals(true, myList.isEmpty());
 	}
 
 	@Test
-	public void contains() throws Exception {
+	public void contains() {
 		assertEquals(true, myList.contains("0"));
 		assertEquals(false, myList.contains("14"));
 	}
 
 	@Test
-	public void toArray() throws Exception {
+	public void toArray() {
 		assertArrayEquals(new String[]{"0", "1", "2", "3", "4"}, myList.toArray());
 	}
 
 	@Test
-	public void toArrayGeneric() throws Exception {
+	public void toArrayGeneric() {
 		String[] testArray = new String[5];
 		String[] expectedArray = new String[]{"0", "1", "2", "3", "4"};
 		assertArrayEquals(expectedArray, myList.toArray(testArray));
 	}
 
 	@Test
-	public void add() throws Exception {
+	public void add() {
 		assertEquals("Test Boolean Add", true, myList.add("5"));
 	}
 
 	@Test
-	public void addCheckSize() throws Exception {
+	public void addCheckSize() {
 		myList.add("5");
 		myList.add("6");
 		myList.add("7");
@@ -125,33 +125,33 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void constructor() throws Exception {
+	public void constructor() {
 		assertEquals(5, myList.size());
 		assertEquals(0, new MyArrayList<>(0).toArray().length);
 	}
 
 	@Test
-	public void remove() throws Exception {
+	public void remove() {
 		assertEquals("0", myList.remove(0));
 		assertEquals("3", myList.remove(2));
 		assertEquals("4", myList.remove(2));
 	}
 
 	@Test
-	public void removeBoolean() throws Exception {
+	public void removeBoolean() {
 		assertEquals(true, myList.remove("0"));
 		assertEquals(false, myList.remove("9"));
 	}
 
 	@Test
-	public void containsAll() throws Exception {
+	public void containsAll() {
 		List<String> testList = myList;
 		assertEquals(true, myList.containsAll(testList));
 	}
 
 	@Test
-	public void addAll() throws Exception {
-		ArrayList<String> arList = new ArrayList<>();
+	public void addAll() {
+		List<String> arList = new ArrayList<>();
 		arList.add("0");
 		arList.add("4");
 		arList.add("0");
@@ -161,7 +161,7 @@ public class MyArrayListTest {
 		arList.add("0");
 		arList.add("4");
 		assertEquals(true, myList.addAll(arList));
-		ArrayList<String> exList = new ArrayList<>();
+		List<String> exList = new ArrayList<>();
 		exList.add("0");
 		exList.add("1");
 		exList.add("2");
@@ -179,13 +179,13 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void removeAll() throws Exception {
-		ArrayList<String> arList = new ArrayList<>();
+	public void removeAll() {
+		List<String> arList = new ArrayList<>();
 		arList.add("0");
 		arList.add("4");
 		assertEquals(true, myList.removeAll(arList));
 		assertEquals(false, myList.removeAll(arList));
-		ArrayList<String> exList = new ArrayList<>();
+		List<String> exList = new ArrayList<>();
 		exList.add("1");
 		exList.add("2");
 		exList.add("3");
@@ -193,14 +193,14 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void retainAll() throws Exception {
-		ArrayList<String> arList = new ArrayList<>();
+	public void retainAll() {
+		List<String> arList = new ArrayList<>();
 		arList.add("0");
 		arList.add("2");
 		arList.add("4");
 		myList.addAll(myList);
 		assertEquals(true, myList.retainAll(arList));
-		ArrayList<String> exList = new ArrayList<>();
+		List<String> exList = new ArrayList<>();
 		exList.add("0");
 		exList.add("2");
 		exList.add("4");
@@ -211,69 +211,69 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void clear() throws Exception {
+	public void clear() {
 		assertEquals(false, myList.isEmpty());
 		myList.clear();
 		assertEquals(true, myList.isEmpty());
 	}
 
 	@Test
-	public void get() throws Exception {
+	public void get() {
 		assertEquals("1", myList.get(1));
 	}
 
 	@Test(expected = IndexOutOfBoundsException.class)
-	public void getThrowException() throws Exception {
+	public void getThrowException() {
 		assertEquals("0", myList.get(12));
 	}
 
 	@Test
-	public void set() throws Exception {
+	public void set() {
 		assertEquals("2", myList.set(2, "set"));
 		assertEquals("set", myList.get(2));
 	}
 
 	@Test(expected = IndexOutOfBoundsException.class)
-	public void setThrowException() throws Exception {
+	public void setThrowException() {
 		assertEquals("2", myList.set(15, "set"));
 
 	}
 
 	@Test(expected = IndexOutOfBoundsException.class)
-	public void addIndex() throws Exception {
+	public void addIndex() {
 		myList.add(10, "11");
 	}
 
 	@Test
-	public void removeIndex() throws Exception {
+	public void removeIndex() {
 		assertEquals("0", myList.remove(0));
 	}
 
 	@Test(expected = IndexOutOfBoundsException.class)
-	public void removeIndexThrowException() throws Exception {
+	public void removeIndexThrowException() {
 		assertEquals("0", myList.remove(11));
 	}
 
 	@Test
-	public void indexOf() throws Exception {
+	public void indexOf() {
 		assertEquals(1, myList.indexOf("1"));
 	}
 
 	@Test
-	public void lastIndexOf() throws Exception {
+	public void lastIndexOf() {
 		myList.add("0");
 		assertEquals(5, myList.lastIndexOf("0"));
 	}
 
 	// ITERATOR
 	@Test
-	public void hasNextIterator() throws Exception {
+	public void hasNextIterator() {
 		ListIterator itr = myList.listIterator();
 		assertEquals(true, itr.hasNext());
 	}
 
 	@Test(expected = ConcurrentModificationException.class)
-	public void previousIterator() throws Exception {
+	public void previousIterator() {
 		ListIterator itr = myList.listIterator();
 		itr.next();
 		assertEquals("0", itr.previous());
@@ -282,7 +282,7 @@ public class MyArrayListTest {
 	}
 
 	@Test(expected = ConcurrentModificationException.class)
-	public void nextIterator() throws Exception {
+	public void nextIterator() {
 		ListIterator itr = myList.listIterator();
 		assertEquals("0", itr.next());
 		myList.add("failed");
@@ -290,13 +290,13 @@ public class MyArrayListTest {
 	}
 
 	@Test
-	public void nextIteratorIndex() throws Exception {
+	public void nextIteratorIndex() {
 		ListIterator itr = myList.listIterator(2);
 		assertEquals("2", itr.next());
 	}
 
 	@Test(expected = ConcurrentModificationException.class)
-	public void removeIterator() throws Exception {
+	public void removeIterator() {
 		ListIterator itr = myList.listIterator();
 		itr.remove();
 		assertEquals("1", myList.get(0));
@@ -306,7 +306,7 @@ public class MyArrayListTest {
 	}
 
 	@Test(expected = ConcurrentModificationException.class)
-	public void setIterator() throws Exception {
+	public void setIterator() {
 		ListIterator<String> itr = myList.listIterator();
 		itr.next();
 		itr.set("TEST");
@@ -316,7 +316,7 @@ public class MyArrayListTest {
 	}
 
 	@Test(expected = ConcurrentModificationException.class)
-	public void addIterator() throws Exception {
+	public void addIterator() {
 		ListIterator<String> itr = myList.listIterator();
 		itr.next();
 		itr.add("TEST");

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.TreeSet;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         try {
             CalculatorForObjectMemory calculator = new CalculatorForObjectMemory(200_000);
             getSizeMemoryEmptyObject(calculator);
@@ -14,7 +14,7 @@ public class Main {
         }
     }
 
-    private static void getSizeMemoryEmptyObject(CalculatorForObjectMemory calculator) throws Exception {
+    private static void getSizeMemoryEmptyObject(CalculatorForObjectMemory calculator) {
         System.out.println(String.class + " pool size(bytes): " + calculator.calcMemory(String::new));
         System.out.println(String.class + " without String pool size(bytes): " + calculator.calcMemory(() -> new String(new char[0])));
         System.out.println("Empty Array size(bytes): " + calculator.calcMemory(() -> new Object[0]));
@@ -22,7 +22,7 @@ public class Main {
         System.out.println(TreeSet.class + " size(bytes): " + calculator.calcMemory(TreeSet::new));
     }
 
-    private static void getSizeMemoryFillingContainer(final CalculatorForObjectMemory calculator) throws Exception {
+    private static void getSizeMemoryFillingContainer(final CalculatorForObjectMemory calculator) {
 
         for (int i = 0; i < 11; i++) {
             int f = i;
