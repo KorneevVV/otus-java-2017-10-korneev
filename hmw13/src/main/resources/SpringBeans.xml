@@ -6,18 +6,7 @@
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context-3.2.xsd ">
 
-    <context:component-scan base-package="ru.otus.korneev.hmw13, ru.otus.korneev.hmw12.servlet, ru.otus.korneev.hmw11"/>
+    <context:component-scan base-package="ru.otus.korneev.hmw13"/>
     <context:annotation-config/>
     <context:spring-configured/>
-
-    <bean id="accountServiceImpl" class="ru.otus.korneev.hmw12.service.AccountServiceImpl"/>
-    <bean id="cacheEngineImpl" class="ru.otus.korneev.hmw11.Cache.CacheEngineImpl">
-        <constructor-arg index="0" value="2"/>
-        <constructor-arg index="1" value="100000"/>
-        <constructor-arg index="2" value="0"/>
-        <constructor-arg index="3" value="false"/>
-    </bean>
-    <bean id="dbService" class="ru.otus.korneev.hmw11.DBServiceWithCache.DBServiceImpWithCache">
-        <constructor-arg ref="cacheEngineImpl"/>
-    </bean>
 </beans>
