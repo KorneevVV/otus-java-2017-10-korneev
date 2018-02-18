@@ -10,6 +10,24 @@
     <packaging>pom</packaging>
     <name>Parent with Multi modules</name>
 
+    <modules>
+        <module>/hmw01</module>
+        <module>/hmw02</module>
+        <module>/hmw03</module>
+        <module>/hmw04</module>
+        <module>/hmw05</module>
+        <module>/hmw06</module>
+        <module>/hmw07</module>
+        <module>/hmw08</module>
+        <module>/hmw09</module>
+        <module>/hmw10</module>
+        <module>/hmw11</module>
+        <module>/hmw12</module>
+        <module>/hmw13</module>
+        <module>/hmw14</module>
+        <module>/hmw15</module>
+    </modules>
+
     <description>Homework of the course "Java Developer"</description>
     <url>https://otus.ru/lessons/razrabotchik-java/</url>
     <developers>
