@@ -24,8 +24,8 @@ public class AppConfig {
     }
 
     @Bean
-    public CacheEngine getCacheEngine() {
-        return new CacheEngineImpl(2, 10000, 0, false);
+    public CacheEngine<Long, Object> getCacheEngine() {
+        return new CacheEngineImpl<>(2, 10000, 0, false);
     }
 
     @Bean
