@@ -35,4 +35,8 @@ public class DBServiceImpWithCache extends DBServiceImpl {
     public void disposeCache() {
         cache.dispose();
     }
+
+    public CacheEngine<Long, Object> getCache() {
+        return cache;
+    }
 }
